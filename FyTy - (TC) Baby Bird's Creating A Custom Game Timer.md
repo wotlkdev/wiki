@@ -46,13 +46,18 @@ First thing's first. We need to create our actual script file, then re-run CMake
 To do this:
 * Navigate to the `scripts_world\World` directory
 * Right-click on `World` -> `Add` -> `New Item...`
-<div dir="rtl">![Screenshot of the `New Item...` menu](Images\FyTyFirstScriptTutorial\02Creating_a_new_cpp_file.jpg)
+
+![Screenshot of the `New Item...` menu](Images/FyTyFirstScriptTutorial/02Creating_a_new_cpp_file.jpg)
+
 * Select `C++ File (.cpp)
 * Type in `timescale_loader_script.cpp` for the file name
  - You can name these files whatever you want, but for sake of consistency, keep the same file name for now
-<div dir="rtl">![Screenshot of the `New Item...` menu](Images\FyTyFirstScriptTutorial\03Create_file_menu.jpg)
+
+![Screenshot of the `New Item...` menu](Images/FyTyFirstScriptTutorial/03Create_file_menu.jpg)
+
 * The file will now be present in the project tree panel on the right
-<div dir="rtl">![Screenshot of the `New Item...` menu](Images\FyTyFirstScriptTutorial\04Result.jpg)
+
+![Screenshot of the `New Item...` menu](Images/FyTyFirstScriptTutorial/04Result.jpg)
 
 Note:
 * This file won't do most of the processing
