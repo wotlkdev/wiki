@@ -27,7 +27,7 @@ First, launch Visual Studio via the solution created by CMake. For TrinityCore, 
 * Any edits made to the source files in the solution (in CMake's `Build` folder) will also be made to the original source files (CMake's `Source` folder).
   - This means you do not need to copy files back and forth.
 
-# TrinityCore's Structure
+## TrinityCore's Structure
 
 For the scope of this tutorial, we will: 
 * Modify and add files in the `scripts_world` project tree
@@ -37,7 +37,7 @@ The edits made to the various `scripts` projects will be compiled to a separate 
 
 That is very slow. Unfortunately, AzerothCore does not support separate .dll files for the script projects. It does have a system called `Modules`, but that is out of scope of this tutorial.
 
-# Creating The Script's Files
+## Creating The Script's Files
 
 First thing's first. We need to create our actual script file, then re-run CMake so the project will actually "know" about our new file.
 
