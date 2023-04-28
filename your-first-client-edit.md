@@ -6,6 +6,8 @@ This tutorial will guide you to creating a very simple replacement of the login 
 - What MPQ files are, how to read them and how they work
 - How to create your own archive folder that the game will read files from.
 
+If you already have a good grasp of how MPQ files and folders work you can comfortably skip this tutorial.
+
 ## Client Data Files
 
 All data files in the WoTLK client is stored in the `Data` directory.
@@ -101,6 +103,8 @@ The easiest way to extract these files is to just select them in MPQ editor and 
 The names of these songs seem to be relatively self-explanatory. If we listen to the file `WotLK_main_title.mp3` we'll hear the wotlk login screen music, for `BC_main_theme.mp3` we'll hear the tbc music, and for `wow_main_theme.mp3` we'll hear the vanilla music.
 
 ## Creating our own patch
+
+_Note for TSWoW users: Your process for doing this is going to be slightly different in practice, but I still recommend that you try doing this manually once to get an idea of patches work under the hood._ 
 
 Messing around with MPQ archives can be annoying, since we need a special editor just to open them. For this reason, many modders have discovered another feature of the wow client that can be enabled by rewriting some of its internal code.
 
