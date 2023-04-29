@@ -9,11 +9,9 @@ As discussed under the `cores` section, you have a few options in terms of what 
 ## Lists of Easy Emulators to install
 
 - [AzerothCore Simplified Installation](https://www.azerothcore.org/wiki/ac-dashboard-core-installation)
-    - Good if you're on Linux or have WSL installed.
-    - Seems to have some issues on Windows with Git Bash
 - [AzerothCore Docker Installation](https://www.azerothcore.org/wiki/install-with-docker)
     - Good if you know how to use docker already
-- [TSWoW Short Repack Installation](https://tswow.github.io/tswow-wiki/installation/repack_short)
+- [TSWoW Simplified Installation](https://tswow.github.io/tswow-wiki/installation/repack_short)
     - Is a repack with scripting support, but the server core cannot be modified.
 - [TSWoW Source Installation](https://tswow.github.io/tswow-wiki/installation/compiling)
     - Is a full TSWoW installation with source code included.

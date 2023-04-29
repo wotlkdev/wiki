@@ -17,7 +17,7 @@ We will not be covering artistic techniques in this tutorial, but there are plen
 ## Prerequisites
 
 - [[Your First Client Edit]]
-- [[Your First Server]]
+- [[Your First Server]] (alternatively, [[Choosing a Core]])
 
 ## Downloading Noggit Red
 

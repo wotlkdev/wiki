@@ -1,46 +1,60 @@
-# Model Editing
+# Your First: Model Edit
 
-Model editing in wow is primarily done in **Blender**, using one of two extensions:
+This guide will teach you the very basics of customizing 3D models in Blender using the WoW Blender Studio Addon.
 
-1. M2Mod
-    - Used for modifying the mesh data (triangles and vertices) of animated or otherwise complex M2s
-2. WoW Blender Studio
-    - Used for modifying and creating WMOs and non-animated M2 models.
+We will learn how to:
+- Set up WoW Blender Studio
+- Make a minor modification to a WMO file
+- Make a minor modification to a static M2 file
 
-This guide will focus on WoW Blender Studio, as it has a much broader use than M2Mod and may eventually replace it if it manages to fully support animated and character models in the future.
+## Theory: M2 and WMO files
 
-## Introduction to WoWs model file formats
+Before we start setting up our extension, we need to understand the two basic file formats used to represent 3D models in WoW.
 
-The 3.3.5 client uses two file formats to represent model data for different purposes:
+### M2
 
-## WMO
+M2 files are the most common type of models in the game, and is used for things like:
 
-WMO is a special type of model often used for large structures like houses, caves, bridges and even capitals like Stormwind and Orgrimmar.
+- Player models
+- Creatures
+- Items
+- Spells
+- Props
 
-WMOs support a lot of things useful for large map objects, like culling portals that improve rendering performance and things like vertex lightning that allow you to paint colors on top of textures to simulate light.
+M2 models can be either **animated** or **non-animated**. Non-animated M2s are significantly easier to work with than animated ones, and to this day many tools still struggle to handle animated M2s correctly.
 
-WMOs come in the `.wmo` format, and are usually grouped together by one `x.wmo` file called the **root** file, followed by one or more `x_000.wmo`, `x_001.wmo`, `x_002.wmo` files, called **group files**. All you need to know about these different files at this point is that you need to move them around together, and if a program asks you to import one of them, you should select the **root** file.
+M2 models have the `.m2` file extension, and are **always** accompanied by one or more `.skin` files, which contains data for viewing the model at different distances (LOD). Contrary to what many beginners believe, the `.skin` file does **not** contain texture data or creature variations.
 
-## M2
+[[image of m2 file with .skin files]]
 
-M2 files are the most versatile model format, and is used for everything that is not a WMO, such as player models, creatures, items, spells, game objects and smaller props in the world.
+### WMO
 
-M2 models can be either animated and non-animated. Non-animated M2s are significantly easier to work with than animated ones, and to this day many tools still struggle to handle animated M2s correctly.
+WMO is a type of model often used for large structures like houses, caves, bridges and even capitals like Stormwind and Orgrimmar.
 
-M2 models come in the `.m2` format, and are **always** accompanied by one or more `.skin` files, which contains data for viewing the model at different distances (LOD for those technically minded).
+WMOs support a lot of things useful for large map objects, like **culling portals**, that improve rendering performance and things like **vertex colors** that allow you to paint colors on top of textures to simulate light.
 
-Contrary to what many beginners believe, the `.skin` file does **not** contain texture data or creature variations.
+WMOs have the `.wmo` extension, and are usually grouped together by one `x.wmo` file called the **root** file, followed by one or more `x_000.wmo`, `x_001.wmo`, `x_002.wmo` files, called **group files**. When opening a wmo file in WBS, we always select the **root** file.
+
+[[image of root wmo with some group files]]
 
 ## Learning to use Blender
 
-As most model editing for WoW is done using Blender, the following sections will assume basic knowledge of using it.
+Since most model editing for WoW is with Blender, this tutorial will assume you understand Blender basics, like navigating the 3D viewport and editing vertices.
 
-If you need to learn Blender from scratch, there are plenty of excellent tutorials on Youtube from channels like Blender Guru.
+You can learn Blender from here:
+- Blender Guru
+- [[Add more here]]
 
-For the purposes of WoW modding, you can comfortably skip features like "rendering", because we don't use that at all in WoW modding. Other features, like sculpting, may have some use, but is not a core requirement by any means.
+You can skip these topics entirely:
+- Rendering
+
+For the purpose of trying out WBS, these sections are also not strictly necessary but might be useful for the future:
+- UV unwrapping
+- Texture editing
+- Sculpting
+- Scripting
+- Material Editor
 
 ## WoW Blender Studio (WBS)
 
-This will be a basic tutorial for setting up and getting started with wow blender studio to create a simple wmo model and a simple m2 model.
-
-It will not teach you all the features available in WBS, and may have slight inaccuracies as WBS is still a program under heavy development.
+[[WRITE IT]]
