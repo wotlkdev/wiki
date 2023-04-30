@@ -132,7 +132,7 @@ int main()
             }
         }
 
-        menu.line(    "* [{0}]({0})", filename);
+        menu.line(    "* [{0}]({0}.md)", filename);
         if (menu_comment.size() > 0)
         {
             menu.line("    * {}", menu_comment);
