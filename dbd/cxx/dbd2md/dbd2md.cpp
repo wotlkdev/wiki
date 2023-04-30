@@ -75,7 +75,7 @@ int main()
         return 1;
     }
 
-    codegen menu(fs::path(OUTPUT_PATH) / "README.md");
+    codegen menu(fs::path(OUTPUT_PATH) / "index.md");
     menu.line("---");
     menu.line("layout: default");
     menu.line("title: DBC Files");
