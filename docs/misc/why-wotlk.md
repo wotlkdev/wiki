@@ -1,3 +1,8 @@
+---
+layout: default
+title: Why WoTLK?
+---
+
 # Why WoTLK?
 
 One of the most common questions beginner wow modders have is why so many projects in WoW are based on WoTLK specifically. After all, modern versions of the game offers tons of graphical and performance improvements, new cool gameplay mechanics like dragon riding and tons of more content to play with. So why are most of us still editing an almost 15 year old version of the game?

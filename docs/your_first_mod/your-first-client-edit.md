@@ -1,3 +1,8 @@
+---
+layout: default
+title: Your First Client Edit
+---
+
 # Your First: Client Edit
 
 This tutorial will guide you to creating a very simple replacement of the login screen background music. This might not be a very interesting mod for most people, but the purpose is to have a barebones example to illustrate the following important concepts:

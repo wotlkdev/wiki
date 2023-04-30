@@ -1,3 +1,8 @@
+---
+layout: default
+title: (TC) Baby Bird's Creating A Custom Game Timer
+---
+
 This tutorial will go over creating your first TrinityCore C++ script, and explaining everything step by step.
 Some of you may find C++ scary, but don't worry, it's scary because lots of people code in a perverse, scary way.
 It can actually be easy to write, simple to understand, and intuitive. And that is how this tutorial shall be. Hopefully.

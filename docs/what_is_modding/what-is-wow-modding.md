@@ -1,3 +1,8 @@
+---
+layout: default
+title: What is WoW Modding?
+---
+
 ## What is WoW Modding?
 
 WoW Modding is a very broad practice, and it's easy to feel overwhelmed with the amount of options, tutorials, tools and possibilities that they present.

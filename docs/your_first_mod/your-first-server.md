@@ -1,3 +1,8 @@
+---
+layout: default
+title: Your First Server
+---
+
 # Your First: Server Installation
 
 _Disclaimer: This article is written by one of the authors of TSWoW._

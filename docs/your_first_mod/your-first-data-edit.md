@@ -1,3 +1,8 @@
+---
+layout: default
+title: Your First Data Edit
+---
+
 # Your First: Data Edits
 
 _Disclaimer: This article is written by one of the authors of TSWoW._

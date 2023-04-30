@@ -1,3 +1,8 @@
+---
+layout: default
+title: Problem Solving
+---
+
 # Problem Solving
 
 It is often said that programming and modding is a practice of "problem-solving", but it is rarely elaborated and effectively isn't saying much more than "just try harder".

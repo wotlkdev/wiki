@@ -1,3 +1,8 @@
+---
+layout: default
+title: Your First Map Edit
+---
+
 # Your First: Map Edit
 
 This tutorial will teach you how to use the program "Noggit Red" to modify an existing map in World of Warcraft. We choose to start with an existing map because it requires slightly less steps to set up, but most of what you will learn here will also apply once you learn how to create completely new maps as well.

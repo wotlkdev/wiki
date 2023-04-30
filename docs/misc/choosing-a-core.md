@@ -1,3 +1,8 @@
+---
+layout: default
+title: Choosing a Core
+---
+
 # Choosing A Core
 
 _Disclaimer: This article is written by one of the authors of TSWoW._
