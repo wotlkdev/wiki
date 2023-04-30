@@ -18,6 +18,6 @@ jobs:
       - name: Generate DBCs
         run: cmake --build ../dbd --target dbd2md_run --config RelWithDebInfo
       - name: Commit build files
-        run: rm docs/dbc/.gitignore git add . && git config user.name test && git config user.email test && git commit -m "bump"
+        run: rm docs/dbc/.gitignore && git add . && git config user.name test && git config user.email test && git commit -m "bump"
       - name: Push to gh_pages
         run: git push origin HEAD:gh_pages -f
