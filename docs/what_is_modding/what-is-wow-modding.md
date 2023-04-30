@@ -3,7 +3,7 @@ layout: default
 title: What is WoW Modding?
 ---
 
-## What is WoW Modding?
+# What is WoW Modding?
 
 WoW Modding is a very broad practice, and it's easy to feel overwhelmed with the amount of options, tutorials, tools and possibilities that they present.
 
@@ -25,7 +25,7 @@ The aim of this article is to briefly describe the traditional "mod categories" 
 
 - **Reverse Engineering**: Editing the client exe itself, or documenting the games binary file formats.
 
-### Texture Editing
+## Texture Editing
 
 [[Insert Image of Texture Editing Here]]
 
@@ -33,13 +33,13 @@ Texture editing is a mostly creative task involving extracting textures from the
 
 Texture editing is mostly a creative practice, and requires very little technical expertise to do successfully.
 
-### Retroporting
+## Retroporting
 
 Retroporting is a type of mod that takes content from a more modern versions of the game and "backports" it to earlier versions. Retroporting is not limited to a particular type of mod or version of the game, and can include retroporting maps, 3D models, AddOns/Interfaces or gameplay features such as transmogging or pet battles.
 
 In practice, many retroporters focus on 3D models or maps, and mostly target the Wrath of the Lich King version of the game.
 
-#### Skillset
+### Skillset
 
 Today, there are many graphical tools to help retroporting models and maps, and it's sometimes possible even for beginners to retroport some models. However, wow formats come with **a lot** of caveats and edge cases that often break the gui tools we have, so some technical proficiency is often necessary to learn how to deal with them.
 
@@ -55,7 +55,7 @@ Expert retroporters often show proficiency in:
 - Deep knowledge of wows binary file formats across the different versions of the game
 - Hex editing and hex editor scripting ("010 editor")
 
-### Model Editing
+## Model Editing
 
 Model editing involves creating or modifying the 3D file formats in the game. Most model editors for the game are written as **Blender** AddOns, and this is by far the most common model editor used for the game.
 
@@ -72,7 +72,7 @@ Model editors often show proficiency in:
 - Knowledge of the basic 3D model formats used by the game, their features and limitations.
 - Problem solving, because things can easily go wrong.
 
-### Map Editing
+## Map Editing
 
 The overworld map in World of Warcraft consists of something called a "heightmap", which is a two-dimensional grid that makes up the "terrain" of the world. This is the ground, hills, mountains and roads that you can walk on in the game. This "map" is distinct from other 3D models in the game, like houses, caves and capitals.
 
@@ -91,7 +91,7 @@ Map editors often show proficiencies in:
 - Model editing, as many parts of the games map consists purely of 3D models, such as buildings, caves and capitals.
 - Problem solving for more advanced uses, because things can easily go wrong with them.
 
-### Server Programming
+## Server Programming
 
 WoW is an online game that requires a server to function at all. Because of how complicated WoW is, creating a server from scratch is a monumental task that virtually nobody bothers doing anymore. Instead, we use one of the available open source servers as a basis to further customize our game by changing their existing programming for our needs. This server "base" is often referred to as the server **emulator** or **core**.
 
@@ -101,7 +101,7 @@ Server programming commonly comes in two basic categories:
 
 - **Core Editing**, which involves changing the **internal programming** of the server to fix bugs or to change how the game works at a fundamental level. This is done more or less exclusively with **C++**, and is significantly less beginner-friendly than scripting. Core editing is often used for the types of edits that scripts are not flexible enough to do, to fix internal bugs or for systems that are called very often and require very high performance.
 
-### Client Interface / AddOn Development
+## Client Interface / AddOn Development
 
 Some custom wow projects use AddOns to create custom graphical interfaces for the game, much like how addons are developed for the 'normal' game. AddOns in World of Warcraft are written in `XML` and `Lua`, but some projects also enable writing them in `TypeScript`.
 
@@ -109,7 +109,7 @@ In custom wow projects, AddOn development often has a lot of overlap with server
 
 One of the difficulties of client interface development in WoTLK is poor documentation, and often requires learning how to read the code of existing AddOns to figure out how to do various things.
 
-### Data Editing
+## Data Editing
 
 Many of the "things" that exist in the game, such as spells, creatures, quests, items and so on are not created through raw programming, but are specified in rows and columns in special "data tables" (think 'excel sheets' or 'SQL tables') with predefined meanings that are read by both the client and server.
 
@@ -119,17 +119,10 @@ Data editing has a lot of overlap with server programming, and effects created i
 
 Becoming proficient with data editing involves learning the meanings of these tables, how they relate to each others and how to use them to get the game to do what you want. Some data tables in the game are very simple to edit, while others consists of hundreds of columns and cross-references to other tables that requires specialized software to edit effectively at all.
 
-### Reverse Engineering
+## Reverse Engineering
 
 Reverse engineering refers to figuring out how an obfuscated system in the game 'works' to allow us to understand, replicate or modify it for our purposes. Almost everything we are able to mod in the game today is based on people in the past reverse engineering the games binary file formats and network protocol.
 
 Today, a very large portion of these files and protocols is already documented for WoTLK, and thus we no longer need to 'reverse engineer' them. Instead, reverse engineers have shifted their focus to the client binary (wow.exe) itself and how to modify its internal code. The purposes for doing this varies, from fixing annoying bugs and driver issues to unlocking custom behavior otherwise impossible.
 
 Reverse engineering is one of the most technically difficult aspects of wow modding, and requires a good understanding of how computer code and memory works, as well as reading x86 assembly code and using disassemblers like IDA or Ghidra.
-
-## Why WoTLK?
-
-- WoTLK, TBC and Vanilla are the only versions of the game that have emulators with anything resembling functional gameplay
-- WoTLK is the only version of the game with a functional map editor
-
-This doesn't mean it's impossible to mod other version of the game, however doing so requires a **much greater** technical expertise and understanding of the games emulators and file formats.
