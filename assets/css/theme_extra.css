@@ -137,6 +137,11 @@ td, th {
         background-image: url("https://images2.alphacoders.com/159/159670.jpg");
         background-attachment: fixed;
         background-size: cover;
-        background-position-x: 200px;
+        background-position-x: 300px;
     }
+}
+
+.wy-nav-content
+{
+    max-width:900px
 }
