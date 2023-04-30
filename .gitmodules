@@ -1,0 +1,3 @@
+[submodule "dbd/WoWDBDefs"]
+	path = dbd/WoWDBDefs
+	url = https://github.com/wowdev/WoWDBDefs.git
