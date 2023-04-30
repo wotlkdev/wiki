@@ -18,4 +18,8 @@ jobs:
       - name: Commit build files
         run: rm docs/dbc/.gitignore && git add . && git config user.name test && git config user.email test && git commit -m "bump"
       - name: Push to gh_pages
-        run: git push origin HEAD:gh_pages -f
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+          branch: gh_pages
