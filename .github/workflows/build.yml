@@ -10,7 +10,8 @@ jobs:
     runs-on: windows-latest
     steps:
       # Build
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+        submodules: true
       - name: Setup CMake
         run: cmake -S dbd/cxx -B ../dbd
       - name: Generate DBCs

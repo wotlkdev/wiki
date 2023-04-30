@@ -69,6 +69,12 @@ int main()
         fs::create_directories(OUTPUT_PATH);
     }
 
+    if (!fs::exists(INPUT_PATH))
+    {
+        std::cout << "The input path \"" << INPUT_PATH << "\" doesn't exist!\n";
+        return 1;
+    }
+
     codegen menu(fs::path(OUTPUT_PATH) / "README.md");
     menu.line("---");
     menu.line("layout: default");
