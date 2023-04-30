@@ -9,7 +9,7 @@
         <li><a href="{{ site.url | absolute_url }}{{ site.github.baseurl }}">Docs</a>&raquo;</li>
         {%- for dir in page_directories %}
         {%- if forloop.first == false %}
-        <li>{{ dir | capitalize }} &raquo;</li>
+        <li>{{ dir | capitalize | replace: "_", " " }} &raquo;</li>
         {%- endif %}
         {%- endfor %}
         <li>{{ page.title }}</li>
