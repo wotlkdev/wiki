@@ -252,3 +252,19 @@ When we have selected an object in this menu, we can place it into the world by 
 ## Saving our Changes
 
 When we have made the changes we want to the world, we can save them either by pressing `CTRL + S` or in the `Editor` window menu and selecting `Save Changed Tiles`.
+
+## Summary
+
+In this tutorial, we have learnt:
+
+- Setting up Noggit Red
+- Sculpting
+- Texturing
+- Object placement
+- Reloading our edits in the client
+
+There are still things to learn about map editing, such as how to get our map changes into the server for things like pathfinding, visibility and fatigue calculations.
+
+Since such workflows are specific for different cores, we will not cover them here.
+
+[[If someone feels like writing this for AzerothCore / TrinityCore feel free to]]
