@@ -11,7 +11,8 @@ jobs:
     steps:
       # Build
       - uses: actions/checkout@v3
-        submodules: true
+        with:
+          submodules: true
       - name: Setup CMake
         run: cmake -S dbd/cxx -B ../dbd
       - name: Generate DBCs
