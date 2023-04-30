@@ -9,9 +9,46 @@
 #include <sstream>
 #include <unordered_map>
 
-// todo: temporary hardcoded paths
+static constexpr std::size_t WOTLK_DBC_COUNT = 246;
+
+// ============================================================================
+//
+// - Overrides -
+//
+//   This is necessary because WoWDBDefs do not handle foreign keys changing
+//   between versions, so we need to tell the exporter what columns to use.
+//
+//   See https://github.com/wowdev/WoWDBDefs/issues/51
+// 
+// ============================================================================
+
+struct fk_override
+{
+    std::string m_table;
+    std::string m_column;
+};
+
+std::unordered_map<std::string, fk_override> fk_override_by_dest =
+{
+    {"WorldState:ID",{"WorldStateUI", "ID"}}
+};
+
+// these take precedence over fk_override_by_dest
+std::unordered_map<std::string, fk_override> fk_override_by_source
+{
+    // just a dummy, doesn't do anything
+    {"CreatureSoundData:SoundExertionID",{"SoundEntries", "ID"}}
+};
 
 namespace fs = std::filesystem;
+
+// ============================================================================
+//
+// - codegen -
+//
+//   Just a simple class to write code to a file line-by-line
+// 
+// ============================================================================
 
 class codegen
 {
@@ -62,6 +99,11 @@ private:
     fs::path m_path;
 };
 
+// ============================================================================
+//
+// - main -
+// 
+// ============================================================================
 int main()
 {
     if (!fs::exists(OUTPUT_PATH))
@@ -89,6 +131,7 @@ int main()
     std::cout << "Building DBC files...\n";
 
     int nav_order = 2;
+    int files = 0;
     for (auto const& itr : fs::directory_iterator{ INPUT_PATH })
     {
         dbd::parser parser(itr.path().string());
@@ -97,18 +140,17 @@ int main()
         {
             continue;
         }
+        files++;
+        std::string table = itr.path().filename().string();
+        table = table.substr(0, table.find_last_of('.'));
 
-        std::string filename = itr.path().filename().string();
-        filename = filename.substr(0, filename.find_last_of('.'));
-
-        std::cout << "  " << filename << ".dbc\n";
-
+        std::cout << "  " << table << ".dbc\n";
 
         std::string file_comment = "";
         std::string menu_comment = "";
 
         std::unordered_map<std::string,std::string> comments;
-        fs::path comments_path = fs::path(COMMENTS_PATH) / (filename + ".md");
+        fs::path comments_path = fs::path(COMMENTS_PATH) / (table + ".md");
         if (fs::exists(comments_path))
         {
             std::ifstream ifs(comments_path);
@@ -134,7 +176,7 @@ int main()
                 size_t index = line.find_first_of(':');
                 if (index == std::string::npos)
                 {
-                    throw std::runtime_error(fmt::format("malformed comments file {} on line {}: could not find any colon", filename, line_no));
+                    throw std::runtime_error(fmt::format("malformed comments file {} on line {}: could not find any colon", table, line_no));
                 }
 
                 std::string key = line.substr(0, index);
@@ -150,29 +192,50 @@ int main()
             }
         }
 
-        menu.line(    "* [{0}]({0})", filename);
+        menu.line(    "* [{0}]({0})", table);
         if (menu_comment.size() > 0)
         {
             menu.line("    * {}", menu_comment);
         }
 
-        codegen file(fs::path(OUTPUT_PATH) / (filename + ".md"));
+        codegen file(fs::path(OUTPUT_PATH) / (table + ".md"));
         file.line("---");
         file.line("layout: default");
-        file.line("title: {}", filename);
+        file.line("title: {}", table);
         file.line("nav_exclude: true",nav_order++);
         file.line("---");
 
-        file.line(        "# {}", filename);
+        file.line(        "# {}", table);
         file.line(        "{}",file_comment);
-        file.line(        "| Column | Type | Reference | Comment |", filename);
+        file.line(        "| Column | Type | Reference | Comment |", table);
         file.line(        "|--------|------|-----------|---------|");
         for (auto const& col : version->m_columns)
         {
-            std::string foreign_table = "";
+            std::string column = std::string(col.m_column->m_name);
+
+            std::string fk_link = "";
             if (col.m_column->m_foreign_table.size() > 0)
             {
-                foreign_table = fmt::format("[{0}#{1}]({0})", col.m_column->m_foreign_table, col.m_column->m_foreign_column);
+                std::string fk_table = std::string(col.m_column->m_foreign_table);
+                std::string fk_column = std::string(col.m_column->m_foreign_column);
+                
+                auto specific_itr = fk_override_by_source.find(fmt::format("{}:{}", table, column));
+                if (specific_itr != fk_override_by_source.end())
+                {
+                    fk_table = specific_itr->second.m_table;
+                    fk_column = specific_itr->second.m_column;
+                }
+                else
+                {
+                    auto generic_itr = fk_override_by_dest.find(fmt::format("{}:{}", fk_table, fk_column));
+                    if (generic_itr != fk_override_by_dest.end())
+                    {
+                        fk_table = generic_itr->second.m_table;
+                        fk_column = generic_itr->second.m_column;
+                    }
+                }
+
+                fk_link = fmt::format("[{0}#{1}]({0})", fk_table, fk_column);
             }
 
             std::string array_suffix = "";
@@ -204,9 +267,18 @@ int main()
             file.line(    "|{}|{}{}|{}|{}|",
                 col.m_column->m_name,
                 type, array_suffix,
-                foreign_table,
+                fk_link,
                 comment
             );
         }
+    }
+
+    if (files != WOTLK_DBC_COUNT)
+    {
+        std::cout << "Error: Only wrote md for " << files << "/" << WOTLK_DBC_COUNT << ", check your WoWDBDefs.\n";
+    }
+    else
+    {
+        std::cout << "Successfully wrote markdown for all " << files << " DBC files.\n";
     }
 }
