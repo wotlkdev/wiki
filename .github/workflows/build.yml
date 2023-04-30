@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   build-api:
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     steps:
       # Build
       - uses: actions/checkout@v2
