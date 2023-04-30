@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Why WoTLK?
+nav_order: 2
 ---
 
 # Why WoTLK?

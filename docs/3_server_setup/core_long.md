@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Choosing a Core
+title: Choosing a Core (Long)
+nav_order: 3
 ---
 
 # Choosing A Core

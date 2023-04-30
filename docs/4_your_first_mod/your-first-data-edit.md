@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Your First Data Edit
+nav_order: 4
 ---
 
 # Your First: Data Edits

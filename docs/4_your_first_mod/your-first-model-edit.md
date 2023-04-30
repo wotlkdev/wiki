@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Your First Model Edit
+title: Your First Model Edit (Unfinished)
+nav_order: 5
 ---
 
-# Your First: Model Edit
+# Your First: Model Edit (Unfinished)
 
 This guide will teach you the very basics of customizing 3D models in Blender using the WoW Blender Studio Addon.
 

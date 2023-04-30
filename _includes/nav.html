@@ -51,7 +51,7 @@
 
 {%- assign sections = sections | split: "|" | uniq | sort %}
 {%- for section in sections %}
-    <p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p>
+    <p class="caption"><span class="caption-text">{{ section | slice: 2 | replace: "_", " "}}</span></p>
     {%- for nav_item in nav %}
         {%- assign path_array = nav_item.dir | split: "/" %}
         {%- assign page_section = path_array[1] %}

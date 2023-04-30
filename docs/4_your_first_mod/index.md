@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Your First Mod
+nav_order: 1
 ---
 
 # Your First Mod

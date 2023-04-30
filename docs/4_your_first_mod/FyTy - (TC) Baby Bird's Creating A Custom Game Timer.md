@@ -1,6 +1,7 @@
 ---
 layout: default
 title: (TC) Baby Bird's Creating A Custom Game Timer
+nav_order: 5
 ---
 
 This tutorial will go over creating your first TrinityCore C++ script, and explaining everything step by step.
