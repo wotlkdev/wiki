@@ -11,10 +11,6 @@
 
 // todo: temporary hardcoded paths
 
-#define OUTPUT_PATH "D:\\dev\\wow\\tswow-maintenance\\wow-intro-tutorials-drafts\\dbd\\dbc"
-#define INPUT_PATH "D:\\dev\\wow\\tswow-maintenance\\wow-intro-tutorials-drafts\\dbd\\WoWDBDefs\\definitions"
-#define COMMENTS_PATH "D:\\dev\\wow\\tswow-maintenance\\wow-intro-tutorials-drafts\\dbd\\comments"
-
 namespace fs = std::filesystem;
 
 class codegen
@@ -68,12 +64,25 @@ private:
 
 int main()
 {
+    if (!fs::exists(OUTPUT_PATH))
+    {
+        fs::create_directories(OUTPUT_PATH);
+    }
+
     codegen menu(fs::path(OUTPUT_PATH) / "README.md");
-    menu.line("# DBC File Documentation");
+    menu.line("---");
+    menu.line("layout: default");
+    menu.line("title: DBC Files");
+    menu.line("nav_order: 1");
+    menu.line("---");
+    menu.line("# DBC Files");
     menu.line("");
     menu.line("This is an automatically generated documentation for the 3.3.5 DBC files.");
     menu.line("## Tables");
 
+    std::cout << "Building DBC files...\n";
+
+    int nav_order = 2;
     for (auto const& itr : fs::directory_iterator{ INPUT_PATH })
     {
         dbd::parser parser(itr.path().string());
@@ -85,6 +94,9 @@ int main()
 
         std::string filename = itr.path().filename().string();
         filename = filename.substr(0, filename.find_last_of('.'));
+
+        std::cout << "  " << filename << ".dbc\n";
+
 
         std::string file_comment = "";
         std::string menu_comment = "";
@@ -132,13 +144,19 @@ int main()
             }
         }
 
-        menu.line(    "* [{0}]({0}.md)", filename);
+        menu.line(    "* [{0}]({0})", filename);
         if (menu_comment.size() > 0)
         {
             menu.line("    * {}", menu_comment);
         }
 
         codegen file(fs::path(OUTPUT_PATH) / (filename + ".md"));
+        file.line("---");
+        file.line("layout: default");
+        file.line("title: {}", filename);
+        file.line("nav_exclude: true",nav_order++);
+        file.line("---");
+
         file.line(        "# {}", filename);
         file.line(        "{}",file_comment);
         file.line(        "| Column | Type | Reference | Comment |", filename);
@@ -148,7 +166,7 @@ int main()
             std::string foreign_table = "";
             if (col.m_column->m_foreign_table.size() > 0)
             {
-                foreign_table = fmt::format("[{0}#{1}]({0}.md)", col.m_column->m_foreign_table, col.m_column->m_foreign_column);
+                foreign_table = fmt::format("[{0}#{1}]({0})", col.m_column->m_foreign_table, col.m_column->m_foreign_column);
             }
 
             std::string array_suffix = "";

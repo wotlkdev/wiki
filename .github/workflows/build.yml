@@ -1,0 +1,21 @@
+name: CI
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  build-api:
+    runs-on: ubuntu-20.04
+    steps:
+      # Build
+      - uses: actions/checkout@v2
+      - name: Setup CMake
+        run: cmake -S dbd/cxx -B ../dbd
+      - name: Generate DBCs
+        run: cmake --build ../dbd --target dbd2md_run --config RelWithDebInfo
+      - name: Commit build files
+        run: rm docs/dbc/.gitignore git add . && git config user.name test && git config user.email test && git commit -m "bump"
+      - name: Push to gh_pages
+        run: git push origin HEAD:gh_pages -f
