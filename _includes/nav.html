@@ -49,8 +49,10 @@
     {%- endif %}
 {%- endfor %}
 
+<div id="left_navbar">
 {%- assign sections = sections | split: "|" | uniq | sort %}
 {%- for section in sections %}
+    <div id="section_{{section}}">
     <p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p>
     {%- for nav_item in nav %}
         {%- assign path_array = nav_item.dir | split: "/" %}
@@ -76,4 +78,34 @@
             {%- endif %}
         {%- endif %}
     {%- endfor %}
+    </div>
 {%- endfor %}
+</div>
+
+<script>
+    let navbar = document.getElementById('left_navbar')
+
+    let all_children = {}
+    navbar.childNodes.forEach((child)=>{
+        if(node.nodeType == 1)
+        {
+            all_children[child.id.split('section_').join('')] = child
+        }
+    })
+
+    for(let key in all_children)
+    {
+        let value = all_children[key];
+        navbar.removeChild(value);
+    }
+
+    function restore_child(name) { if(all_children[name]) navbar.appendChild(all_children[name]); }
+
+    restore_child('docs');
+    restore_child('introduction');
+    restore_child('server_setup');
+    restore_child('types_of_mods');
+    restore_child('your_first_mod');
+    restore_child('problem_solving');
+    restore_child('more_tutorials');
+</script>
