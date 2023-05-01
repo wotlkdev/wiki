@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your First Map Edit
-nav_order: 3
+nav_order: 2
 ---
 
 # Your First: Map Edit

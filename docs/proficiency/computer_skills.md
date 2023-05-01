@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Problem Solving
-nav_order: 2
+title: Computer Skills
+nav_order: 1
 ---
 
 # Computer Skills

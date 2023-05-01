@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Proficiency
+title: Glossary
 nav_exclude: true
 ---
 
-# Proficiency
+# Glossary
 
-Todo
+terms and such

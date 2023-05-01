@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Choosing a Core (Short)
-nav_order: 2
+nav_order: 1
 ---
 
 # Your First: Server Installation

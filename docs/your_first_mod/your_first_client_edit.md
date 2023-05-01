@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your First Client Edit
-nav_order: 2
+nav_order: 1
 ---
 
 # Your First: Client Edit

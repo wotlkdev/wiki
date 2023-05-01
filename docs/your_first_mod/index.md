@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your First Mod
-nav_order: 1
+nav_exclude: true
 ---
 
 # Your First Mod

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Problem Solving
-nav_order: 3
+title: Asking Questions
+nav_order: 2
 ---
 
 # Asking Questions

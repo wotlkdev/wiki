@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your First Model Edit (Unfinished)
-nav_order: 5
+nav_order: 4
 ---
 
 # Your First: Model Edit (Unfinished)
