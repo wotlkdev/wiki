@@ -64,7 +64,8 @@
         <a href="/wow-intro-tutorials-drafts/{{section}}" style="padding: 0px; color:#9b9b9b; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
     {% endif %}
 
-    {% if page.url contains section or page.url contains "localhost" %}
+    {%- assign full_url = page.url | absolute_url %}
+    {% if page.url contains section or full_url contains "localhost" %}
         {%- for nav_item in nav %}
             {%- assign path_array = nav_item.dir | split: "/" %}
             {%- assign page_section = path_array[1] %}
