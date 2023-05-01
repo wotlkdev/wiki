@@ -49,7 +49,7 @@
 {%- endfor %}
 
 <div id="left_navbar">
-{%- assign sections = sections | split: "|" | uniq | sort %}
+{%- assign sections = sections | split: "|" | uniq | sort | compact %}
 {%- for section in sections %}
     <div id="section_{{section}}">
 
