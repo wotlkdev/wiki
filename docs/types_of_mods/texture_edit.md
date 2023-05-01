@@ -2,6 +2,7 @@
 layout: default
 title: Texture Editing
 nav_order: 2
+nav_exclude: true
 ---
 
 # Texture Editing

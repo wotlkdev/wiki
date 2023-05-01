@@ -58,10 +58,10 @@
     {%- assign check = page.url | split:ending -%}
     {% if check.size == 0 %}
         <!-- Selected -->
-        <a href="/{{section}}" style="padding: 0px; color:#9b9b9b; background-color: #ffffff; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
+        <a href="/wow-intro-tutorials-drafts/{{section}}" style="padding: 0px; color:#9b9b9b; background-color: #ffffff; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
     {% else %}
         <!-- Not selected -->
-        <a href="/{{section}}" style="padding: 0px; color:#9b9b9b; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
+        <a href="/wow-intro-tutorials-drafts/{{section}}" style="padding: 0px; color:#9b9b9b; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
     {% endif %}
 
     {% if page.url contains section %}

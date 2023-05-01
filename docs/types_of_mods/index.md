@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Types of Mods
-nav_order: 1
+nav_exclude: true
 ---
 
 # Types of Mods
