@@ -1,0 +1,27 @@
+Call stack:
+Address   Frame     Function      SourceFile
+00007FFA2B320B1F  00000036BDB3AD70  std::_Container_base12::_Orphan_all_unlocked_v3+F  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory line 1226
+00007FFA2B320AEA  00000036BDB3ADC0  std::_Container_base12::_Orphan_all_locked_v3+3A  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory line 1088
+00007FFA2B320AA4  00000036BDB3ADF0  std::_Container_base12::_Orphan_all+14  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xmemory line 1247
+00007FFA2B32573E  00000036BDB3AE40  std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate+1E  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring line 5014
+00007FFA2B2EEA07  00000036BDB3AE90  std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=+57  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\xstring line 3122
+00007FFA2B310967  00000036BDB3AEC0  WorldObject::SetName+27  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Entities\Object\Object.h line 354
+00007FFA2D9B6AC4  00000036BDB3AF40  TSUnit::SetName+74  D:\dev\wow\tswow-maintenance\tswow\tswow-core\Private\TSUnit.cpp line 1322
+00007FFB1B5131E7  00000036BDB3B140  <lambda_875d84ceb6c9b3a81219deb8d7d31e3a>::operator()<TSPlayer,TSMutableString,double,double>+B7  D:\dev\wow\tswow-maintenance\tswow-install\modules\default\livescripts\build\default.dataset\cpp\livescripts\livescripts.cpp line 8
+00007FFB1B5130D1  00000036BDB3B1C0  <lambda_875d84ceb6c9b3a81219deb8d7d31e3a>::<lambda_invoker_cdecl><TSPlayer,TSMutableString,double,double>+61  D:\dev\wow\tswow-maintenance\tswow-install\modules\default\livescripts\build\default.dataset\cpp\livescripts\livescripts.cpp line 14
+00007FFA2D8932A9  00000036BDB3B370  TSPlayerScript::OnChat+159  D:\dev\wow\tswow-maintenance\tswow\tswow-core\Private\TSScriptMgrEvents.cpp line 145
+00007FFA2C11CE31  00000036BDB3B420  ScriptMgr::OnPlayerChat+141  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Scripting\ScriptMgr.cpp line 1965
+00007FFA2B9E3DC2  00000036BDB3B5C0  Player::Say+C2  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Entities\Player\Player.cpp line 21175
+00007FFA2BECD872  00000036BDB3CB40  WorldSession::HandleMessagechatOpcode+1652  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Handlers\ChatHandler.cpp line 298
+00007FFA2C2EE703  00000036BDB3CB70  PacketHandler<WorldPacket,&WorldSession::HandleMessagechatOpcode>::Call+23  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Server\Protocol\Opcodes.cpp line 48
+00007FFA2C1FE906  00000036BDB3D870  WorldSession::Update+426  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Server\WorldSession.cpp line 332
+00007FFA2C4F38C8  00000036BDB3DA00  World::UpdateSessions+198  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\World\World.cpp line 3224
+00007FFA2C4F2B89  00000036BDB3E1F0  World::Update+729  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\World\World.cpp line 2509
+00007FF7DCBD2E5F  00000036BDB3E3F0  WorldUpdateLoop+2EF  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\worldserver\Main.cpp line 521
+00007FF7DCBD6A03  00000036BDB3FA30  main+2473  D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\worldserver\Main.cpp line 406
+00007FF7DCD23F39  00000036BDB3FA80  invoke_main+39  D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl line 79
+00007FF7DCD23E8E  00000036BDB3FAF0  __scrt_common_main_seh+12E  D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl line 288
+00007FF7DCD23D4E  00000036BDB3FB20  __scrt_common_main+E  D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl line 331
+00007FF7DCD23FAE  00000036BDB3FB50  mainCRTStartup+E  D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp line 17
+00007FFB39FC7604  00000036BDB3FB80  BaseThreadInitThunk+14
+00007FFB3B4226A1  00000036BDB3FC00  RtlUserThreadStart+21
