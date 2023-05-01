@@ -46,7 +46,7 @@ There are three common approaches to data editing, **Table editors**, **Designer
 * **Designers** [[what to call these???]] are programs specifically written to make editing some types of tables easier, such as Spells or creatures. There aren't such hand-tailored tools available for all tables in the game, so these are commonly used together with _Table Editors_.
     * _Examples: Spell Editor, Keira3 [[more examples!!]]_
 
-* **TSWoW** is a special [[server core]] that uses a completely different approach to data editing by using a special scripting language instead of editors. TSWoW has first-class support for far more types of entities than most _Designer_ tools do today, but relies on navigating a simple scripting language and can generally not be used together with other data editing tools.
+* **TSWoW** is a special [[server core]] that uses a completely different approach to data editing by using a special scripting language instead of editors. TSWoW has first-class support for far more types of entities than most _Designer_ tools do today, but relies on navigating a scripting language and can generally not be used together with other data editing tools.
 
 This tutorial will focus on using **Table Editors**, but may still be useful for Designer users who wants to understand how these tables work behind the scenes. 
 
