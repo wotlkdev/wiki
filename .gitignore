@@ -141,3 +141,6 @@ $RECYCLE.BIN/
 .directory
 .Trash-*
 .nfs*
+
+# Jekyll
+.jekyll-metadata
