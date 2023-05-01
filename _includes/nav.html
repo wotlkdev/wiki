@@ -45,11 +45,15 @@
             {%- endif %}
         {%- endif %}
     {%- endif %}
-    {%- assign sections = sections | append: path_array[1] | append: "|" %}
+
+
+    {%- if nav_item.is_main_index != true  %}
+        {%- assign sections = sections | append: path_array[1] | append: "|" %}
+    {%- endif %}
 {%- endfor %}
 
 <div id="left_navbar">
-{%- assign sections = sections | split: "|" | uniq | sort | compact %}
+{%- assign sections = sections | split: "|" | uniq | sort %}
 {%- for section in sections %}
     <div id="section_{{section}}">
 

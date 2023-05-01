@@ -2,6 +2,7 @@
 layout: default
 title: Index
 nav_exclude: true
+is_main_index: true
 ---
 
 # WoTLK Modding Docs
