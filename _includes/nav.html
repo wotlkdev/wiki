@@ -43,9 +43,8 @@
                     {%- assign set_next_page = false %}
                 {% endif %}
             {%- endif %}
-        {%- else %}
-            {%- assign sections = sections | append: path_array[1] | append: "|" %}
         {%- endif %}
+        {%- assign sections = sections | append: path_array[1] | append: "|" %}
     {%- endif %}
 {%- endfor %}
 
