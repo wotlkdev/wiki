@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Problem Solving
-nav_order: 3
+nav_order: 6
 ---
 
 ## Problem Solving

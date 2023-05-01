@@ -57,7 +57,7 @@ In this list, we will avoid more contentious topics or platitudes like:
 
 We will instead stick to the things almost everyone agrees on and illustrates how these projects actually differ. For serious custom projects it is advisable to look into these matters further on your own.
 
-### [[TrinityCore]]
+###  <img width="64px" src="https://cdn.discordapp.com/icons/376073286427344897/d5538e2eea07f10103b6546eaeba76a7.png?size=240"> [TrinityCore](https://trinitycore.atlassian.net/wiki/spaces/tc/overview)
 
 - **Started:** 2008
 - **Based on:** MaNGOS
@@ -72,7 +72,7 @@ We will instead stick to the things almost everyone agrees on and illustrates ho
 
 TrinityCore is a tried and tested core with more active custom projects than any other core, but has more barebones support and ready-made modules for custom features.
 
-### [[AzerothCore]]
+### <img width="64px" style="border-radius: 50%;" src="https://cdn.discordapp.com/icons/217589275766685707/997a566468859317e9e22e9e782fb587.png?size=240"> [AzerothCore](https://www.azerothcore.org/)
 
 - **Began:** 2016
 - **Based on:** TrinityCore
@@ -83,7 +83,7 @@ TrinityCore is a tried and tested core with more active custom projects than any
 
 AzerothCore is a very actively developed core that focuses heavily on Blizzlike content, has a very large amount of custom modules focused on serverside behavior, but has less extensively custom projects using it compared to other cores.
 
-### [[TSWoW]]
+### <img width="64px" src="https://cdn.discordapp.com/icons/793065928870854667/455d9131fd64cc40a99937898a91d5a8.png?size=240">[TSWoW](https://tswow.github.io/tswow-wiki/) 
 
 - **Began:** 2021
 - **Based on:** TrinityCore
@@ -92,4 +92,4 @@ AzerothCore is a very actively developed core that focuses heavily on Blizzlike 
     - Project Epoch
 - **Scripting Languages:** TypeScript, C++, Lua
 
-TSWoW is very different from other projects and is more of an entire framework for customizing the game, both the server and the client. For this reason it supports more advanced custom features out of the box than any other core by far, but is heavily oriented around scripting and has poor support for editors like Keira and Spell Editor.
+TSWoW is very different from other projects and is more of a 'framework' for customizing the entire game than just a server. For this reason it supports more advanced custom features out of the box than any other core by far, but is heavily oriented around scripting and has poor support for editors like Keira and Spell Editor.

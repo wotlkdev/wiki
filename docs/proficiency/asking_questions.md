@@ -65,10 +65,10 @@ Instead, be specific about what you don't understand or why you think the tutori
 
 ## Bad Question: Asking to avoid learning
 
-Modding is difficult, workflows often take time to get into and frustrations can come at you at almost any time and in the most unpredictable forms.
+Modding is difficult, workflows often take time to get into and frustrations can come at you at almost any time and in the most unpredictable ways.
 
 Asking questions when stumbling into problems or even frustrations is not a bad thing on its own, but it's important to be wary of developing question-asking as a behavior to avoid doing your own research or experiments for anything that feels difficult or frustrating, because those are the only situations where you can effectively practice problem-solving yourself.
 
 This has less to do with how many questions you ask, and more to do with how often you reach for asking without stopping to ask yourself if there is something you can try to teach yourself first, or an experiment you can attempt.
 
-Aside from your very first steps into modding, if you frequently end up in situations where the only thing you can do is ask someone else, chances are you're attempting to do something that is too difficult for your current skill level, or that you are overwhelming yourself with too much frustration to learn anything effectively.
+Aside from your very first steps into modding, if you frequently end up in situations where the only thing you can do is ask someone else, chances are you're attempting to do something that is too difficult for your current skill level, or that you are overwhelming yourself with too much frustration to learn effectively.
