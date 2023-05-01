@@ -4,7 +4,7 @@ remote_theme: ihm-tswow/wow-intro-tutorials-drafts
 
 # Theme settings:
 #site_author: Carlos Pereira Atencio
-repo_url: "https://github.com/carlosperate/jekyll-theme-rtd"
+repo_url: "https://github.com/ihm-tswow/wow-intro-tutorials-drafts"
 edit_on_github: true
 github_docs_folder: true
 sticky_navigation: true
