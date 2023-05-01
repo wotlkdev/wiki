@@ -53,31 +53,43 @@
 {%- assign sections = sections | split: "|" | uniq | sort %}
 {%- for section in sections %}
     <div id="section_{{section}}">
-    <p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p>
-    {%- for nav_item in nav %}
-        {%- assign path_array = nav_item.dir | split: "/" %}
-        {%- assign page_section = path_array[1] %}
-        {%- if page_section == section and nav_item.hide != true and nav_item.nav_exclude != true %}
-            {%- if nav_item.url == page.url %}
-                {%- include toc.html html=content sanitize=true h_max=4 item_class="toctree-l%level%" %} 
+
+    {%- assign ending = '/' | append: section | append: '/' -%}
+    {%- assign check = page.url | split:ending -%}
+    {% if check.size == 0 %}
+        <!-- Selected -->
+        <a href="/{{section}}" style="padding: 0px; color:#9b9b9b; background-color: #ffffff; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
+    {% else %}
+        <!-- Not selected -->
+        <a href="/{{section}}" style="padding: 0px; color:#9b9b9b; font-size: 16px;"><p class="caption"><span class="caption-text">{{ section | replace: "_", " "}}</span></p></a>
+    {% endif %}
+
+    {% if page.url contains section %}
+        {%- for nav_item in nav %}
+            {%- assign path_array = nav_item.dir | split: "/" %}
+            {%- assign page_section = path_array[1] %}
+            {%- if page_section == section and nav_item.hide != true and nav_item.nav_exclude != true %}
                 {%- if nav_item.url == page.url %}
-                    {%- assign previous_page = last_loop_page %}
-                    {%- assign set_next_page = true %}
+                    {%- include toc.html html=content sanitize=true h_max=4 item_class="toctree-l%level%" %} 
+                    {%- if nav_item.url == page.url %}
+                        {%- assign previous_page = last_loop_page %}
+                        {%- assign set_next_page = true %}
+                    {%- endif %}
+                {%- else %}
+                    <ul>
+                        <li class="toctree-l1">
+                            <a class="reference internal" href="{{ nav_item.url | absolute_url}}">{{ nav_item.title }}</a>
+                        </li>
+                    </ul>
+                    {%- assign last_loop_page = nav_item %}
+                    {%- if set_next_page %}
+                        {%- assign next_page = nav_item %}
+                        {%- assign set_next_page = false %}
+                    {% endif %}
                 {%- endif %}
-            {%- else %}
-                <ul>
-                    <li class="toctree-l1">
-                        <a class="reference internal" href="{{ nav_item.url | absolute_url}}">{{ nav_item.title }}</a>
-                    </li>
-                </ul>
-                {%- assign last_loop_page = nav_item %}
-                {%- if set_next_page %}
-                    {%- assign next_page = nav_item %}
-                    {%- assign set_next_page = false %}
-                {% endif %}
             {%- endif %}
-        {%- endif %}
-    {%- endfor %}
+        {%- endfor %}
+    {%- endif %}
     </div>
 {%- endfor %}
 </div>
@@ -87,7 +99,7 @@
 
     let all_children = {}
     navbar.childNodes.forEach((child)=>{
-        if(node.nodeType == 1)
+        if(child.nodeType == 1)
         {
             all_children[child.id.split('section_').join('')] = child
         }
@@ -99,13 +111,21 @@
         navbar.removeChild(value);
     }
 
-    function restore_child(name) { if(all_children[name]) navbar.appendChild(all_children[name]); }
+    function restore_child(name)
+    {
+        if(all_children[name]) navbar.appendChild(all_children[name]);
+        delete all_children[name];
+    }
 
-    restore_child('docs');
     restore_child('introduction');
     restore_child('server_setup');
     restore_child('types_of_mods');
     restore_child('your_first_mod');
-    restore_child('problem_solving');
+    restore_child('proficiency');
     restore_child('more_tutorials');
+
+    for(let child in all_children)
+    {
+        navbar.appendChild(all_children[child]);
+    }
 </script>

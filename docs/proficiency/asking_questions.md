@@ -8,7 +8,7 @@ nav_order: 3
 
 Many people tend to fall on one of two sides of "asking questions about almost everything" or "asking virtually no questions at all". Some people in modding communities become a little weary of people asking many questions and occasionally even looks down on asking questions at all. this isn't good blah blah balh.
 
-### Asking Good Questions
+## Asking Good Questions
 
 There isn't really a template for asking good questions, but for wow modding there are some general pointers:
 
@@ -18,7 +18,7 @@ There isn't really a template for asking good questions, but for wow modding the
 - If your problem involves feeling confused about a concept, program or guide, mention this.
 - If your problem stems from a solution you came up with yourself, **briefly** explain what problem your own solution is meant to solve.
 
-### Bad Question: Direct-messaging helpers
+## Bad Question: Direct-messaging helpers
 
 These are questions that you send to people who you may have seen helping other people out in support channels or that you have received help from yourself.
 
@@ -63,7 +63,7 @@ Instead, be specific about what you don't understand or why you think the tutori
 - I have tried to read the tutorial for installing trinitycore, but it feels like this is too difficult for me to do. Are there any easier tutorials or alternatives to just throw up a small test server for a complete beginner?
     - _Why this is good: You admit that setting up trinitycore itself might be too difficult for you, and you specify that your actual goal is to 'just have a playable server', which there might be alternatives for._
 
-### Bad Question: Asking to avoid learning
+## Bad Question: Asking to avoid learning
 
 Modding is difficult, workflows often take time to get into and frustrations can come at you at almost any time and in the most unpredictable forms.
 
@@ -72,7 +72,3 @@ Asking questions when stumbling into problems or even frustrations is not a bad 
 This has less to do with how many questions you ask, and more to do with how often you reach for asking without stopping to ask yourself if there is something you can try to teach yourself first, or an experiment you can attempt.
 
 Aside from your very first steps into modding, if you frequently end up in situations where the only thing you can do is ask someone else, chances are you're attempting to do something that is too difficult for your current skill level, or that you are overwhelming yourself with too much frustration to learn anything effectively.
-
-## Building Technical Proficiency
-
-Even when narrowing down your modding scope to a single version of the game, like WoTLK, there are still tons of different file formats, conventions, programs and workflows to get used to.
