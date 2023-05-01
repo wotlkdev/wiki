@@ -14,6 +14,12 @@ terms and such
     - **Emulator** is typically used to underline the servers function to _emulate_ the game, like how you would emulate a video game console.
     - **Core** is typically used more specifically to refer to the internal C++ code used to run the server itself, as opposed to scripts or the games database.
 
+- **Dupe**: A very serious bug that allows players to duplicate money or items.
+
+- **Crash**: When a program abruptly shuts down due to an error.
+
+- **Crash log**: A special file that a program can produce when it crashes. For wow servers, crashlogs are typically found in the `Crashes` subdirectory where your `worldserver.exe` is located.
+
 - **Fork**: Refers to a project that has branched out from another project and created a new version of it, like Noggit Red from Noggit or AzerothCore from TrinityCore.
 
 - **GPL**: A software license that demands that you publish the source code for all your modifications and additions if you distribute compiled binaries (e.g. repacks).
