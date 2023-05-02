@@ -126,7 +126,7 @@ These are tools that should be avoided due to bugs or because there are much bet
 
 - [**model-changing (mcnet)**](https://model-changing.net/): Website and discord community for WoW modding. Main hub for WoTLK modding today.
 
-- [**Modcraft**](http://emudevs.modcraft-backup.de/index.php): Old website for wow modding, now just an archive for old tutorials and resources.
+- [**Modcraft**]( http://modcraft-backup.de/): Old website for wow modding, now just an archive for old tutorials and resources.
 
 - [**ac-web**](https://ac-web.org/): Website and forum for wow emulation and modding, has a lot of repacks.
 
