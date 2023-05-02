@@ -29,13 +29,13 @@ Some people prefer to try to learn computer skills by "bashing their heads on wh
 
 The rest of this article will attempt to give a few pointers to what kind of skills you might want to learn and where you can go to learn them.
 
-### Foundational Computer Knowledge
+## Foundational Computer Knowledge
 
 If you have barely opened a PC before and you're scared of things like **files** and **folders**, you might want to look into an introductory computer course offered by your local library or other association. 
 
 There are also some online courses and tutorials available, but I haven't found any suitable to list here.
 
-### Command-line Interfaces
+## Command-line Interfaces
 
 Many tools in wow modding rely on typing in text into a command prompt, as opposed to GUIs with pictures and buttons. To effectively use command-line tools it is often useful to have a basic of how the builtin windows command-line works.
 
@@ -43,13 +43,13 @@ Many tools in wow modding rely on typing in text into a command prompt, as oppos
 
 - [ThioJoe](https://youtu.be/H0gwnFV_SFs) has a short video explaining the differences between the two command shells in Windows, `PowerShell `and `cmd`.
 
-### Networking
+## Networking
 
 Since WoW is an online game, knowing some basic networking is very useful to help set up your server to let others play on it.
 
 _Warning: hosting any private servers publicly **can** get you into legal trouble. This guide is for educational purposes only._
 
-#### Port Forwarding
+### Port Forwarding
 
 Port forwarding is a configuration on your home router to allow other people to connect to servers you host from your own computer. This can be useful for playing with a small group of friends, similar to how many people host Minecraft servers.
 
@@ -62,7 +62,7 @@ Port forwarding is a configuration on your home router to allow other people to 
     - Sometimes, the username/password on your router will be different from the ones in the video.
     - This video is for cataclysm, but works the same for WoTLK.
 
-#### Remote Hosting
+### Remote Hosting
 
 For larger wow private server projects, most people rent servers in a remote location instead of hosting from their own home computers. Learning how to set up and manage such remote servers is a skill on its own, and not something you should save for the last minute when developing a custom wow server.
 
