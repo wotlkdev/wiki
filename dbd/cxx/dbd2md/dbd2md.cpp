@@ -120,13 +120,12 @@ int main()
     codegen menu(fs::path(OUTPUT_PATH) / "index.md");
     menu.line("---");
     menu.line("layout: default");
-    menu.line("title: DBC Files");
-    menu.line("nav_order: 1");
+    menu.line("title: DBC");
+    menu.line("nav_exclude: true");
     menu.line("---");
-    menu.line("# DBC Files");
+    menu.line("# DBC");
     menu.line("");
     menu.line("This is an automatically generated documentation for the 3.3.5 DBC files.");
-    menu.line("## Tables");
 
     std::cout << "Building DBC files...\n";
 
