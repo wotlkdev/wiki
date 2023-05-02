@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Server Crashlogs
+title: Server Crashlogs (Unfinished)
 nav_order: 4
 ---
 
-# Server Crashlogs
+# Server Crashlogs (Unfinished)
 
 So you've finally brought together that complicated patch into your server, you hit the bat file to start your worldserver and are immediately met with the message:
 

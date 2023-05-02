@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Server Project
+title: Server Project (Unfinished)
 nav_order: 8
 ---
 
-# Server Projects
+# Server Projects (Unfinished)
 
 So, you've spent the last couple of weeks or months just learning the ropes and all the kinds of cool things you can make this decade old game do, only now starting to realize just how much work has gone into making this all possible and all the endless possibilities for the kinds of crazy servers you could create.
 
