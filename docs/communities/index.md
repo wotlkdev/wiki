@@ -34,20 +34,22 @@ Most WoTLK modding communities are on Discord, and it's where most modders hang 
 
 Forums are still used by some cliques in WoW modding, and it's where most full guides and tutorials can be found.
 
-- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/u5TYvyJ.png"> [**model-changing (mcnet)**](https://model-changing.net/): Website for WoW modding. Connected to the WoW Modding Community Discord server.
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/2oVQK7V.png"> [**model-changing (mcnet)**](https://model-changing.net/)
+    - Website for WoW modding. Connected to the WoW Modding Community Discord server.
 
-- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/QWU8a32.png">[**ac-web**](https://ac-web.org/): Website and forum for wow emulation and modding, has a lot of repacks.
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/QWU8a32.png">[**ac-web**](https://ac-web.org/)
+    - Website and forum for wow emulation and modding, has a lot of repacks.
 
-- <img width="64px" style="border-radius: 50%;" src="https://www.ownedcore.com/forums/images/styles/OwnedCoreFX/addimg/logofoot.svg">[**OwnedCore**](https://www.ownedcore.com/): Website for modding, hacking and gold selling. Used to be a central hub for wow modding and contains some useful old guides, but is not used very often by modders anymore.
+- <img width="64px" style="border-radius: 50%;" src="https://www.ownedcore.com/forums/images/styles/OwnedCoreFX/addimg/logofoot.svg">[**OwnedCore**](https://www.ownedcore.com/)
+    - Website for modding, hacking and gold selling. Used to be a central hub for wow modding and contains some useful old guides, but is not used very often by modders anymore.
 
-- <img width="64px" style="border-radius: 50%;" src="https://wowdev.wiki/wowdevlogo.png?size=240">[**wowdev.wiki**](https://wowdev.wiki/Main_Page): A website that documents many of WoWs binary file formats and DBC layouts. Can be a little messy to read as many pages focus on multiple versions of the game at once.
+- <img width="64px" style="border-radius: 50%;" src="https://wowdev.wiki/wowdevlogo.png?size=240">[**wowdev.wiki**](https://wowdev.wiki/Main_Page)
+    - A website that documents many of WoWs binary file formats and DBC layouts. Can be a little messy to read as many pages focus on multiple versions of the game at once.
 
 ## Inactive / Archives
 
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/iOZtt3t.png"> [**Modcraft**](http://modcraft-backup.de/)
+    - Old website for wow modding, now just an archive for old tutorials and resources.
 
-
-- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/iOZtt3t.png"> [**Modcraft**](http://modcraft-backup.de/): Old website for wow modding, now just an archive for old tutorials and resources.
-
-
-
-- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/M6zwVTK.png"> [**Emudevs**](http://emudevs.modcraft-backup.de/index.php): Another old modding website, with more resources for the server (much of it is now outdated).
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/M6zwVTK.png"> [**Emudevs**](http://emudevs.modcraft-backup.de/index.php)
+    - Another old modding website, with more resources for the server (much of it is now outdated).
