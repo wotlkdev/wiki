@@ -122,13 +122,9 @@ terms and such
 
 - [**Ghidra**](https://github.com/NationalSecurityAgency/ghidra/releases): Another disassembler and free alternative to IDA.
 
-
-
 ## Legacy Tools
 
 These are tools that should be avoided due to bugs or because there are much better tools around today.
 
 - [**MyDBCEditor**](https://github.com/wowgaming/old-dbc-editors/releases/tag/1.0): A DBC editor for WoTLK
     - Prefer WDBX.
-
-## Communities and Websites

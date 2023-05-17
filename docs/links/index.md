@@ -46,7 +46,7 @@ Forums are still used by some cliques in WoW modding, and it's where most full g
 
 
 
-- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/iOZtt3t.png"> [**Modcraft**](http://modcraft-backup.de/index.php): Old website for wow modding, now just an archive for old tutorials and resources.
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/iOZtt3t.png"> [**Modcraft**](http://modcraft-backup.de/): Old website for wow modding, now just an archive for old tutorials and resources.
 
 
 
