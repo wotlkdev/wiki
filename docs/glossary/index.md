@@ -14,6 +14,15 @@ terms and such
     - **Emulator** is typically used to underline the servers function to _emulate_ the game, like how you would emulate a video game console.
     - **Core** is typically used more specifically to refer to the internal C++ code used to run the server itself, as opposed to scripts or the games database.
 
+- **authserver/realmd**: This is the part of the core that handles initial connections to the server, and presents the realmlist when a player connects for the first time.
+    - **realmd** is the name for this program in MaNGOS
+    - **authserver** is the name for this program in TrinityCore and its derivatives.
+    - Despite its TrinityCore-derived name, this program does not actually authenticate the player to the gameserver itself, but simply authenticates them to show the realmlist. Gameserver authentication happens on the worldserver, not the 'authserver'.
+
+- **worldserver/mangosd**: This is the actual gameserver part of the core.
+    - **mangosd** is the name for this program in MaNGOS.
+    - **worldserver** is the name for this program in TrinityCore and its derivatives.
+
 - **Dupe**: A very serious bug that allows players to duplicate money or items.
 
 - **Crash**: When a program abruptly shuts down due to an error.
@@ -123,13 +132,3 @@ These are tools that should be avoided due to bugs or because there are much bet
     - Prefer WDBX.
 
 ## Communities and Websites
-
-- [**model-changing (mcnet)**](https://model-changing.net/): Website and discord community for WoW modding. Main hub for WoTLK modding today.
-
-- [**Modcraft**](http://emudevs.modcraft-backup.de/index.php): Old website for wow modding, now just an archive for old tutorials and resources.
-
-- [**ac-web**](https://ac-web.org/): Website and forum for wow emulation and modding, has a lot of repacks.
-
-- [**OwnedCore**](https://www.ownedcore.com/): Website for modding, hacking and gold selling. Used to be a hub for wow modding and contains some useful old guides, but is not used very often anymore.
-
-- [**wowdev.wiki**](https://wowdev.wiki/Main_Page): A website that documents many of WoWs binary file formats and database layouts for multiple versions of the game.

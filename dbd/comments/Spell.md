@@ -1,4 +1,4 @@
-This table is where all the spells in the game are defined, aside from a small amount of server-only spells.
+This table is where all the spells in the game are defined, aside from a small amount of server-only spells that are sometimes stored in the cores `spell_dbc` table.
 
 ----COLUMNS----
 _md_menu: Defines all the spells in the game

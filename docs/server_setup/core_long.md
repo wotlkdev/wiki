@@ -49,13 +49,11 @@ Luckily, most licenses are very permissive and mostly govern **when you have to 
 
 ## General Purpose Server Cores
 
-In this list, we will avoid more contentious topics or platitudes like:
+What core to use is a highly debated topic, usually revolving around arguments about "performance", "stability", "helpful community" or "competent/incompetent developers".
 
-- Performance/Stability
-- "Helpful community"
-- "Competent/incompetent developers"
+While these aren't bad things to investigate for yourself, for this article we will focus on the things that are reasonably measurable and almost everyone agrees on.
 
-We will instead stick to the things almost everyone agrees on and illustrates how these projects actually differ. For serious custom projects it is advisable to look into these matters further on your own.
+For serious custom projects it is **highly advisable** to look into these matters further on your own.
 
 ###  <img width="64px" src="https://cdn.discordapp.com/icons/376073286427344897/d5538e2eea07f10103b6546eaeba76a7.png?size=240"> [TrinityCore](https://trinitycore.atlassian.net/wiki/spaces/tc/overview)
 
@@ -70,7 +68,7 @@ We will instead stick to the things almost everyone agrees on and illustrates ho
 - **Pros:**
     - Used by many large custom projects
 
-TrinityCore is a tried and tested core with more active custom projects than any other core, but has more barebones support and ready-made modules for custom features.
+TrinityCore is a tried and tested core with more active custom projects than any other core, but has less builtin support for custom features or ready-made custom modules compared to other cores.
 
 ### <img width="64px" style="border-radius: 50%;" src="https://cdn.discordapp.com/icons/217589275766685707/997a566468859317e9e22e9e782fb587.png?size=240"> [AzerothCore](https://www.azerothcore.org/)
 
@@ -78,10 +76,8 @@ TrinityCore is a tried and tested core with more active custom projects than any
 - **Based on:** TrinityCore
 - **License:** AGPL
 - **Scripting Languages:** C++, Lua (with Eluna)
-- **Custom Projects using it:**
-    - ???
 
-AzerothCore is a very actively developed core that focuses heavily on Blizzlike content, has a very large amount of custom modules focused on serverside behavior, but has less extensively custom projects using it compared to other cores.
+AzerothCore is a very actively developed core that focuses heavily on Blizzlike content, but also has a large amount of custom modules focused on serverside behavior, but has less extensively custom projects using it compared to other cores.
 
 ### <img width="64px" src="https://cdn.discordapp.com/icons/793065928870854667/455d9131fd64cc40a99937898a91d5a8.png?size=240">[TSWoW](https://tswow.github.io/tswow-wiki/) 
 
@@ -92,4 +88,12 @@ AzerothCore is a very actively developed core that focuses heavily on Blizzlike 
     - Project Epoch
 - **Scripting Languages:** TypeScript, C++, Lua
 
-TSWoW is very different from other projects and is more of a 'framework' for customizing the entire game than just a server. For this reason it supports more advanced custom features out of the box than any other core by far, but is heavily oriented around scripting and has poor support for editors like Keira and Spell Editor.
+TSWoW is very different from other projects and is more of a 'framework' for customizing the entire game than just a server. For this reason it supports more advanced custom features out of the box than any other core by far, but has poor support for editors like Keira and Spell Editor, and instead relies on its own powerful scripting languages to create and modify data.
+
+## Summary
+
+Most custom projects today use either TrinityCore, AzerothCore, or TSWoW.
+
+- TrinityCore and AzerothCore are fairly similar in terms of project structure, but are two very different cores internally.
+- TrinityCore and TSWoW use virtually the same internal core and share most updates, but have very different project structure for modders.
+- All cores support _basic_ custom features like creatures, items, maps, game objects, spells, scripting and so on.

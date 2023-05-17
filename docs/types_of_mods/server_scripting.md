@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Server Programming
+title: Server Scripting
 nav_order: 5
 ---
 
-# Server Programming
+# Server Scripting
 
 WoW is an online game that requires a server to function at all. Because of how complicated WoW is, creating a server from scratch is a monumental task that virtually nobody bothers doing anymore. Instead, we use one of the available open source servers as a basis to further customize our game by changing their existing programming for our needs. This server "base" is often referred to as the server **emulator** or **core**.
 

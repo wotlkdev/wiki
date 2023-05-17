@@ -69,3 +69,6 @@ For larger wow private server projects, most people rent servers in a remote loc
 - [Different Types of Web Hosting Explained](https://youtu.be/AXVZYzw8geg) discusses the different types of remote hosting that are commonly offered by these companies. It focuses on hosting websites, but most of what he says is also relevant for wow servers.
 
 - [A Very Simple VPS Server Tutorial For Beginners](https://youtu.be/YiwBkRukugw) shows how to set up up a simple remote server from start to finish. While it's not relating to hosting WoW servers, it's very good for giving you an idea of how setting up a server like this looks like.
+
+## Programming
+

@@ -25,3 +25,7 @@ The aim of this article is to briefly describe the traditional "mod categories" 
 - **Data Editing**: Editing the "data tables" that makes up much of the entities in the game, like spells and creatures.
 
 - **Reverse Engineering**: Editing the client exe itself, or documenting the games binary file formats.
+
+- **Tool Development**: Developing tools to interact with the data in the game, anything from map editors like _Noggit_, client database editors like _WDBX_ or blender plugins like _WoW Blender Studio_.
+
+- **Emulation**: Making the game server behave as closely to the blizzard servers as possible.
