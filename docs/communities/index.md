@@ -8,11 +8,11 @@ nav_exclude: true
 
 This page contains links to various active and inactive modding communities around the web.
 
+_If you want your wow modding community added to this list, just make a [pull request], but no private server advertisements._
+
 ## Discord
 
 Most WoTLK modding communities are on Discord, and it's where most modders hang around nowadays. Some servers are general modding communities, while others focus on specific tools or emulators.
-
-_If you want your wow modding community added to this list, just make a pull request, but no private server advertisements._
 
 - <img width="64px" style="border-radius: 50%;" src="https://cdn.discordapp.com/icons/407664041016688662/48f47fc35e722173f88daf77de27dc15.webp?size=100"> [WoW Modding Community](https://discord.gg/Dnrztg7dCZ)
 
@@ -34,13 +34,13 @@ _If you want your wow modding community added to this list, just make a pull req
 
 Forums are still used by some cliques in WoW modding, and it's where most full guides and tutorials can be found.
 
-- <img width="64px" src="https://i.imgur.com/u5TYvyJ.png"> [**model-changing (mcnet)**](https://model-changing.net/): Website for WoW modding. Connected to the WoW Modding Community Discord server.
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/u5TYvyJ.png"> [**model-changing (mcnet)**](https://model-changing.net/): Website for WoW modding. Connected to the WoW Modding Community Discord server.
 
-- <img width="64px" src="https://web.archive.org/web/20230514091506im_/https://ac-web.org/styles/acwebexclusivedark/basic/publicLogoUrl.png">[**ac-web**](https://ac-web.org/): Website and forum for wow emulation and modding, has a lot of repacks.
+- <img width="64px" style="border-radius: 50%;" src="https://i.imgur.com/QWU8a32.png">[**ac-web**](https://ac-web.org/): Website and forum for wow emulation and modding, has a lot of repacks.
 
-- <img width="64px" src="https://www.ownedcore.com/forums/images/styles/OwnedCoreFX/addimg/logofoot.svg">[**OwnedCore**](https://www.ownedcore.com/): Website for modding, hacking and gold selling. Used to be a central hub for wow modding and contains some useful old guides, but is not used very often by modders anymore.
+- <img width="64px" style="border-radius: 50%;" src="https://www.ownedcore.com/forums/images/styles/OwnedCoreFX/addimg/logofoot.svg">[**OwnedCore**](https://www.ownedcore.com/): Website for modding, hacking and gold selling. Used to be a central hub for wow modding and contains some useful old guides, but is not used very often by modders anymore.
 
-- <img width="64px" src="https://wowdev.wiki/wowdevlogo.png?size=240">[**wowdev.wiki**](https://wowdev.wiki/Main_Page): A website that documents many of WoWs binary file formats and DBC layouts. Can be a little messy to read as many pages focus on multiple versions of the game at once.
+- <img width="64px" style="border-radius: 50%;" src="https://wowdev.wiki/wowdevlogo.png?size=240">[**wowdev.wiki**](https://wowdev.wiki/Main_Page): A website that documents many of WoWs binary file formats and DBC layouts. Can be a little messy to read as many pages focus on multiple versions of the game at once.
 
 ## Inactive / Archives
 
