@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Links
+title: Communities
 nav_exclude: true
 ---
 
-# Links
+# Communities
 
 This page contains links to various active and inactive modding communities around the web.
 
