@@ -14,19 +14,19 @@ The aim of this website is to provide up-to-date information about _what wow mod
 
 ## Table of Contents
 
-- Introduction: 
+- [Introduction](./introduction):
     - A few introductory essays on what WoW modding is and why people do it.
 
-- Types of Mods:
+- [Types of Mods](./types_of_mods):
     - Explanations for the kinds of mods people create for the game.
 
-- Server Setup:
+- [Server Setup](../server_setup):
     - Pointers for easily setting up basic test servers, followed by a longer discussion on how to choose a server core for more serious projects.
 
-- Your First Mod:
+- [Your First Mod](./your_first_mod/index.html):
     - Introductory tutorials for understanding how modding works.
 
-- Proficiency: 
+- [Proficiency](../proficiency/index.html):
     - Some words of advice and suggestions for how to become good at wow modding.
 
 - Tutorials:
