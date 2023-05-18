@@ -147,6 +147,15 @@ td, th {
     min-height:100vh;
 }
 
+.img_prompt
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+}
+
 .img_25
 {
     display: block;
@@ -164,6 +173,25 @@ td, th {
 {
     z-index: 10;
     transform: scale(4) rotate(0.001deg);
+}
+
+.img_80
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+    perspective: 1000px;
+    backface-visibility: hidden;
+    transition: opacity .3s ease .3s;
+    transform: scale(1) rotate(0.001deg);
+}
+
+.img_80:hover
+{
+    z-index: 10;
+    transform: scale(1.25) rotate(0.001deg);
 }
 
 .img_50
