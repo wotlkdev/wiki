@@ -146,3 +146,41 @@ td, th {
     max-width:900px;
     min-height:100vh;
 }
+
+.img_25
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 25%;
+    perspective: 1000px;
+    backface-visibility: hidden;
+    transition: opacity .3s ease 0s;
+    transform: scale(1) rotate(0.001deg);
+}
+
+.img_25:hover
+{
+    z-index: 10;
+    transform: scale(4) rotate(0.001deg);
+}
+
+.img_50
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    perspective: 1000px;
+    backface-visibility: hidden;
+    transition: opacity .3s ease 0s;
+    transform: scale(1) rotate(0.001deg);
+}
+
+.img_50:hover
+{
+    z-index: 10;
+    transform: scale(2) rotate(0.001deg);
+}
