@@ -72,9 +72,9 @@ Let's look at a real example: [Link](./real_crashlog.txt)
 
 This is significantly messier than our trivial example, and a lot of these function names don't seem to make any sense.
 
-What we can start by doing is instead look at the `SourceFile` columns. You will notice that the first few lines point at some file called `xmemory`. This is an internal header file for the microsoft STL, and is not part of our code. It's unlikely there would be something wrong with these files, so what we're instead looking for is the first line that actually points to a file that we own.
+What we can start by doing is to look at the `SourceFile` columns. You will notice that the first few lines point at some file called `xmemory`. This is an internal header file for the microsoft STL, and is not part of our code. It's unlikely there would be something wrong with these files, so what we're instead looking for is the first line that actually points to a file that we own.
 
-This, we find on the sixth entry:
+We find this on the sixth row:
 
 ```
 D:\dev\wow\tswow-maintenance\tswow\cores\TrinityCore\src\server\game\Entities\Object\Object.h line 354
@@ -111,8 +111,4 @@ else
 
 ## The "dump" file
 
-An alternative to the text file, the dump file is a raw memory dump of the programs current state at the time that it crashed.
-
-These dump files can be opened in Visual Studio if we have our current solution open.
-
-_todo: prepare a good scenario to illustrate this, can't easily make a fictional one_
+TODO

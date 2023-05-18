@@ -40,9 +40,10 @@ Then, we navigate to the "Debug" menu window and select `Attach to Process`.
 
 This should bring up a dialog like below, where we can search for `worldserver` to easily find our process, and then click "Attach" to attach the debugger.
 
-
 ## Breakpoints
+
+TODO
 
 I have not had time to write the rest of this tutorial yet, but this video explains some of the basics of how to actually use a debugger once you have attached it to some generic program:
 
-<iframe width="420" height="315" src="https://youtu.be/0ebzPwixrJA" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://youtube.com/embed/0ebzPwixrJA" frameborder="0" allowfullscreen></iframe>
