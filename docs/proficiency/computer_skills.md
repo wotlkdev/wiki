@@ -72,3 +72,41 @@ For larger wow private server projects, most people rent servers in a remote loc
 
 ## Programming
 
+One of the most useful skills you can learn to increase your modding skills is a programming language. 
+
+Programming is **everywhere** in WoW modding, from server scripts and internal code to all the tools and custom workflows that can fit your own projects needs.
+
+What programming language to learn depends greatly on your previous experience and what you want to be able to achieve with it. Below is a list of the common programming languages in WoW modding and how you can go about learning them.
+
+### <img width="64px" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg"> Lua
+
+- One of the most popular scripting languages for private servers
+- Used for server scripting with tools like [Eluna](https://github.com/ElunaLuaEngine/Eluna) and for client addon development.
+- Is a relatively simple language to learn and highly suitable for beginners.
+- _TODO: if you know a good tutorial about Lua for beginners, please make a pull request._
+
+### <img width="64px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png"> TypeScript
+
+- The primary language used in the [TSWoW](https://tswow.github.io/tswow-wiki/) project, but can also be used in place of Lua in [AzerothCore](https://github.com/azerothcore/eluna-ts) to provide better code completion and type checking.
+
+- Is a relatively simple language to learn, comparable to Lua and Python.
+
+- TSWoW DataScript is an even simpler variant of TypeScript that barely requires any programming experience at all, and is used to procedurally create SQL and DBC data.
+
+### <img width="64px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"> Python
+
+- Used in various wow modding tools, mostly for managing various client formats and in Blender plugins like WoW Blender Studio.
+- There is currently no way to use python for server scripts currently.
+- Is about as easy to learn as Lua, but the WoW modding codebases that use Python are relatively complex and rarely suitable for beginners.
+
+### <img width="64px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png"> C++
+
+- Used to write all modern server cores and most modding tools as well.
+- Is one of the harder languages to learn, but can still be learnt by complete beginners if they are willing to spend the time necessary to understand its quirks.
+
+- Despite its difficulty, it has many great learning resources:
+    - [LearnCpp](https://www.learncpp.com/) is the most popular resource for learning C++ from scratch.
+    - [The Cherno](https://youtu.be/18c3MTX0PK0?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) is a youtube channel with byte-sized tutorials that explains various topics about the language in very simple ways aimed at beginners.
+    - [Effective C++](https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876) and [Effective Modern C++](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996) are two of the most highly regarded books once you're past the beginner stage. Reading these will give you a better understanding of the language than the vast majority of private server developers.
+
+    - [C++ Concurrency in Action](https://www.amazon.com/C-Concurrency-Action-Practical-Multithreading/dp/1933988770) is another great book to understand multithreading, which is a central concept in the structure of private server core.
