@@ -27,8 +27,12 @@ This is a list of modern tools used by modders.
 - [**WoWModelViewer (WMV)**](https://code.google.com/archive/p/wowmodelviewer/downloads?page=6): Tool used to view WMO and M2 models in the game, and is used by tools like Noggit and WBS as a 'model selector'.
     - For WoTLK modding, the preferred version to use is [r252](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/wowmodelviewer/WMV_Binary_v0701_r252_Win32_DevWork.zip).
 
-- [**BLPConverter**](https://www.wowinterface.com/downloads/info14110-BLPConverter.html): Tool used to convert between BLP and other common file formats like PNG and JPG.
+- [**BLPConverter**](https://www.wowinterface.com/downloads/info14110-BLPConverter.html): Command-line tool used to convert between BLP and other common file formats like PNG and JPG.
     - Has a GUI version [here](https://model-changing.net/index.php?app=downloads&module=downloads&controller=view&id=96)
+
+- [**BLPLab**](https://www.hiveworkshop.com/threads/blp-lab-v0-5-0.137599/): GUI Tool used to convert between BLP and other common file formats.
+
+- [**Photoshop BLP Plugin**](https://www.wowinterface.com/downloads/info22445-BLPFormatPlug-inforPhotoshop.html): Plugin that allows saving and loading BLP files directly in Photoshop.
 
 - [**M2Mod**](https://bitbucket.org/suncurio/m2mod/downloads/): Tool and blender plugin to work with mesh data on animated M2 files (cannot edit animations).
 
