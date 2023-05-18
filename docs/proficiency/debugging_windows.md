@@ -52,12 +52,10 @@ I have not had time to write the rest of this tutorial yet, but this video expla
 
 Here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed mauris ac orci placerat venenatis. Integer posuere, diam quis dignissim vehicula, ex quam mollis tellus, et aliquet erat tellus eu risus. Suspendisse finibus egestas urna sit amet ultrices. Mauris tempor facilisis felis, sit amet congue dolor interdum non. Nam sit amet dictum diam. Cras sed magna sodales, euismod lorem vitae, laoreet purus. Aenean ac porta diam. Donec vitae purus at elit semper gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-<img class="img_25" src="https://i.imgur.com/7TsUMRF.png">
+<img src="https://i.imgur.com/zNdLkxC.png">
 
 Here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed mauris ac orci placerat venenatis. Integer posuere, diam quis dignissim vehicula, ex quam mollis tellus, et aliquet erat tellus eu risus. Suspendisse finibus egestas urna sit amet ultrices. Mauris tempor facilisis felis, sit amet congue dolor interdum non. Nam sit amet dictum diam. Cras sed magna sodales, euismod lorem vitae, laoreet purus. Aenean ac porta diam. Donec vitae purus at elit semper gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
-<img class="img_25" src="https://i.imgur.com/7TsUMRF.png">
-
-<img class="img_25" src="https://i.imgur.com/7TsUMRF.png">
+<img class="img_50" src="https://i.imgur.com/zNdLkxC.png">
 
 Here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed mauris ac orci placerat venenatis. Integer posuere, diam quis dignissim vehicula, ex quam mollis tellus, et aliquet erat tellus eu risus. Suspendisse finibus egestas urna sit amet ultrices. Mauris tempor facilisis felis, sit amet congue dolor interdum non. Nam sit amet dictum diam. Cras sed magna sodales, euismod lorem vitae, laoreet purus. Aenean ac porta diam. Donec vitae purus at elit semper gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
