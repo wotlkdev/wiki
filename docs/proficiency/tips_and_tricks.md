@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Version Control
+title: Tips and Tricks
 nav_order: 7
 ---
 

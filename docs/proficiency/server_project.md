@@ -4,13 +4,11 @@ title: Server Project
 nav_order: 8
 ---
 
-# Server Projects
+# Server Projects (WIP)
 
 So you've spent the last couple of weeks or months just learning the ropes and all the kinds of cool things you can make the game do, and you're only now starting to realize just how endless the possibilities truly are.
 
 Then, you might stop yourself for a moment. How come there aren't that many extensive custom servers around?
-
-## The Truth about WoW Modding
 
 The harsh truth about WoW modding is that the overwhelming majority of custom projects fail and never launch.
 
@@ -48,9 +46,7 @@ Creating projects like this is real work not all that unlike creating games from
 
 I've seen many projects fall into what's commonly called "feature-creep", where a developer will finish a feature only so far that it is actually interesting and enjoyable to work on, then drop it for something else once it becomes too frustrating or boring.
 
-For some types of projects, this isn't actually a bad approach, and I personally use it for some of my pet projects that are all very small in scope.
-
-However, for a larger project this type of approach isn't realistic, and taking breaks from an ever expanding pile of features will eventually make them almost impossible to return to, because you cease to see any point of completing any of them.
+For some types of projects, this isn't actually a bad approach, and I personally use it for some of my pet projects that are all very small in scope. However, for a larger project this type of approach isn't realistic, and taking endless breaks from an ever expanding pile of features will eventually make them almost impossible to return to, because you cease to see any point of completing any of them.
 
 ### Too Theoretical
 
@@ -58,10 +54,12 @@ Many server ideas are sketched entirely inside a game designers head before a si
 
 Basing your entire servers idea around a concept that you haven't even tried out a smaller prototype of is a recipe for disaster, and a bunch of systems that aren't going to work out either in isolation or together.
 
-Most ideas we humans get are stupid, and we need rigorous ways to rule out the few nuggets that are actually good. For designing video games, the only method we can reliably use is to actually playtest our ideas before committing to them.
+Most ideas we humans get are stupid, and we need rigorous ways to rule out the few nuggets that are actually good. For designing video games, the only method we can reliably use is to actually playtest our ideas before committing to them fully.
 
-Don't rely extensively on complicated systems that only exist in your own head without playtesting them in a simpler scenario first.
+Don't rely extensively on complicated systems that only exist in your own head without playtesting them in a simpler scenario.
 
 ### Summary
 
-If you have any experience with creative work in game design or any other fields, these points are probably not news, WoW servers suffer from about the same problems as any other creative hobby. Most projects fail on either of:
+If you have any experience with creative work in game design or any other fields, these points are probably not news, WoW servers suffer from about the same problems as any other creative work or hobby. However, MMORPGs are some of the most complex types of games you can create, and the amount of ready-made modules, tools and assets from the base game can be an especially dangerous trap for new developers looking for ways to  implement the virtual world of their dreams.
+
+Games like World of Warcraft can be a fantastic springboard to try out both extensive and experimental ideas on top of, but it will never do all the hard work for you, and most successful projects take many years to develop even for established teams.
