@@ -46,4 +46,4 @@ TODO
 
 I have not had time to write the rest of this tutorial yet, but this video explains some of the basics of how to actually use a debugger once you have attached it to some generic program:
 
-<iframe width="420" height="315" src="https://youtube.com/embed/0ebzPwixrJA" frameborder="0" allowfullscreen></iframe>
+<div align="center"><iframe width="420" height="315" src="https://youtube.com/embed/0ebzPwixrJA" frameborder="0" allowfullscreen></iframe></div>
