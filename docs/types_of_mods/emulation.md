@@ -44,9 +44,7 @@ But, you might think, isn't this a guide to **modding** the game? Why should mod
 
 For modders, emulating the game perfectly is of course not always the goal, but since the game is so complicated modders **almost always use the same server emulators** that blizzlike servers do.
 
-To a beginner, this may seem like a drawback, and sometimes it is. For most core developers, emulation is the goal and modding a secondhand consideration, which can sometimes lead to design decisions that aren't the best for modders.
-
-However, sharing cores like this between a vast array of projects also has some great benefits that beginners don't always realize:
+To a beginner, this may seem like a drawback, and sometimes it is. For most core developers, emulation is the goal and modding a secondhand consideration, which can sometimes lead to design decisions that aren't the best for modders. However, sharing cores like this between a vast array of projects also has some great benefits that can be easy to gloss over:
 
 - More centralized development means everyone shares the same stability fixes and performance enhancements
 

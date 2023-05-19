@@ -12,7 +12,7 @@ This tutorial will guide you to creating a very simple replacement of the login 
 - What MPQ files are, how to read them and how they work
 - How to create your own archive folder that the game will read files from.
 
-If you already have a good grasp of how MPQ files and folders work you can comfortably skip this tutorial.
+If you already have a good grasp of how MPQ files and folders work you can skip this tutorial.
 
 ## Client Data Files
 

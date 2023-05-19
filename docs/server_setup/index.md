@@ -6,4 +6,10 @@ nav_exclude: true
 
 # Server Setup
 
-This section should explain the basics of what goes into setting up a wow server.
+Depending on what type of project you're planning to create, choosing a server core may be a difficult or a simple choice. This guide is split into two depending on what you need the server for.
+
+- [Short Version](./core_short): For when you just want a server that's easy to set up to try out clientside mods.
+
+- [Longer Version](./core_long): A longer discussion on the cores in common use among custom projects today.
+
+- [Misc](./core_other): Lists of various other cores for very specific uses or versions other than WoTLK.

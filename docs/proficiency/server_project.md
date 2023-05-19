@@ -6,13 +6,9 @@ nav_order: 8
 
 # Server Projects (WIP)
 
-So you've spent the last couple of weeks or months just learning the ropes and all the kinds of cool things you can make the game do, and you're only now starting to realize just how endless the possibilities truly are.
+So you've spent the last couple of weeks or months just learning the ropes and all the kinds of cool things you can make the game do, and you're only now starting to realize just how endless the possibilities truly are. Then you might stop yourself for a moment. How come there aren't that many extensive custom servers around?
 
-Then, you might stop yourself for a moment. How come there aren't that many extensive custom servers around?
-
-The harsh truth about WoW modding is that the overwhelming majority of custom projects fail and never launch.
-
-These aren't only projects started by modding novices, it has included some of the most technically proficient people in our scene who very well knew the tools at their disposal and the limitations imposed by the game itself.
+The harsh truth about WoW modding is that the overwhelming majority of custom projects fail and never launch. These aren't only projects started by modding novices, it has included some of the most technically proficient people in our scene who very well knew the tools at their disposal and the limitations imposed by the game itself.
 
 With all the time and effort spent on getting our scene to where it as, why is this?
 

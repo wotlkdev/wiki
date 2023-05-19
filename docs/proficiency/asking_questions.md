@@ -26,7 +26,7 @@ Sending direct messages or pinging people rarely gets you help faster and over t
 
 In very rare circumstances it is sometimes good to ping specific people who might know very specific things that nobody else knows, especially if you are willing to help document the knowledge you're asking for. Problem is then, when people abuse ping/dm systems to to 'get help faster', people with very specific knowledges turn off their notifications and can't even help with things only they know.
 
-### Bad Question: Asking to ask
+## Bad Question: Asking to ask
 
 These are questions on the form "can i ask about x" or "is this the right forum to ask for x?"
 
@@ -34,13 +34,13 @@ Just ask the question. Very few people are annoyed by the wrong question acciden
 
 By asking to ask the question you just waste notifications for nothing useful.
 
-### Bad Question: Soliciting a "helper"
+## Bad Question: Soliciting a "helper"
 
 These are questions on the form "can someone help me with <vague problem description>?", or "anybody who is good at <general modding category>?".
 
 This is a bad question, because those answering have no idea about the scope of your question or if they feel like taking the time to answer it once they hear it. Most people avoid questions like these for this reason.
 
-### Bad Question: XY Problem
+## Bad Question: XY Problem
 
 See [this article.](https://xyproblem.info/)
 
@@ -48,7 +48,7 @@ These are questions that ask about your own solutions rather than the problem yo
 
 These are bad questions, because your own solution might be completely wrong, or the tutorial you are following might be severely outdated or just wrong.
 
-### Bad Question: Asking to skip work
+## Bad Question: Asking to skip work
 
 These are questions on the form "how do i install trinitycore" when they ignore workflows that have direct tutorials for them already.
 
