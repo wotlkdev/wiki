@@ -83,7 +83,7 @@ This little window allows us to write in a partial **SQL query** to filter the r
 
 If we typed our query correctly, we should end up with just a single row left in the table with the name "Hogger". Now that we've found him, changing his name is as easy as clicking on the "Name" cell that reads Hogger and type in a new name:
 
-<img class="mi ili80" src="https://i.imgur.com/TAuiqRM.png">
+<img class="mi ili80" src="https://i.imgur.com/n7yQnE2.png">
 
 ## Restarting
 
