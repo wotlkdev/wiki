@@ -10,7 +10,7 @@ This section will explain the root level nodes involved in making the game run. 
 
 - [The client](./client)
 - The authserver
-- [The worldserver](./worldserver)
+- [The worldserver](./core)
 - [The database](./database)
 
 <img src="https://i.imgur.com/AMEWUrv.png">
