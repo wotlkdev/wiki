@@ -22,3 +22,10 @@ Map editors often show proficiencies in:
 - Sculpting and painting
 - Model editing, as many parts of the games map consists purely of 3D models, such as buildings, caves and capitals.
 - Problem solving for more advanced uses, because things can easily go wrong with them.
+
+<table class="gt" style="table-layout: fixed; width: 100%;">
+    <tr>
+        <td><p><img class="mi" src="https://i.imgur.com/o5dC8Nh.png">Noggit is the most popular map editor for the game.</p></td>
+        <td><p><img class="mi" src="https://i.imgur.com/lBclEbb.png">WoW Machinima Tool is a popular tool used to preview light settings inside of the game</p></td>
+    </tr>
+</table>

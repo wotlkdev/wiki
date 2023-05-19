@@ -25,3 +25,13 @@ Expert retroporters often show proficiency in:
 
 - Deep knowledge of wows binary file formats across the different versions of the game
 - Hex editing and hex editor scripting ("010 editor")
+
+<table class="gt" style="table-layout: fixed; width: 100%;">
+    <tr>
+        <td><p><img class="mi" src="https://i.imgur.com/pAm6mJF.png">010 Editor: Tool used to inspect and edit binary file formats.</p></td>
+        <td><p><img class="mi" src="https://i.imgur.com/FPdXcHP.png">IDA Pro: Tool used to inspect and edit binary file formats.</p></td>
+    </tr>
+    <tr>
+        <td><p><img class="mi" src="https://i.imgur.com/UeuTU2M.png">10 classes per race limitation caused by wow.exe bug solved by reverse engineering.</p></td>
+    </tr>
+</table>

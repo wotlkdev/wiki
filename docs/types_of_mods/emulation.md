@@ -6,8 +6,6 @@ nav_order: 10
 
 # Emulation
 
-[[Insert Image of core development Here]]
-
 World of Warcraft is a very complicated game, and it has taken server developers decades of work to get to where they are today.
 
 What a server core is actually doing is called _emulation_, meaning that it pretends to be a piece of machinery that it is not. In this case, wow private server emulators pretends to be an official blizzard wow server.  This is not all that unlike what video game console emulators do, like **snes9x** for the SNES or **Dolphin** for the Nintendo Wii, with the difference that WoW servers emulate _network packets_ instead of processor architectures and focuses on a _single game_ instead of an entire game console.

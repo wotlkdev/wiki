@@ -13,3 +13,10 @@ There are hundreds upon hundreds of these data tables used by the game and emula
 Data editing has a lot of overlap with server programming, and effects created in data tables are commonly listened to by server scripts to create highly specialized effects, especially for creatures and spells.
 
 Becoming proficient with data editing involves learning the meanings of these tables, how they relate to each others and how to use them to get the game to do what you want. Some data tables in the game are very simple to edit, while others consists of hundreds of columns and cross-references to other tables that requires specialized software to edit effectively at all.
+
+<table class="gt" style="table-layout: fixed; width: 100%;">
+    <tr>
+        <td><p><img class="mi" src="https://i.imgur.com/JkY4YSP.png">WDBXEditor: Tool used to edit client database tables.</p></td>
+        <td><p><img class="mi" src="https://i.imgur.com/peXdbe4.png">HeidiSQL: Tool used to edit server database tables.</p></td>
+    </tr>
+</table>
