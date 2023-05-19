@@ -48,6 +48,6 @@ Vmap files are **optional** to extract, and can be disabled in worldservers conf
 
 These are files that contain even more complex map data used for pathfinding.
 
-MMap files are based on the same data as VMaps, but process them differently and often takes significantly longer to extract because of how complex they are.
+MMap files are based on the same data as VMaps, but process them differently and often takes significantly longer to extract.
 
 MMap files are **optional** to extract.
