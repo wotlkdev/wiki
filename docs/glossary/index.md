@@ -6,7 +6,11 @@ nav_exclude: true
 
 # Glossary
 
-terms and such
+This document will include some common terminology used by modders.
+
+See also:
+- [Tools](../tools)
+- [Communities](../communities)
 
 ## General Terms
 
@@ -19,9 +23,16 @@ terms and such
     - **authserver** is the name for this program in TrinityCore and its derivatives.
     - Despite its TrinityCore-derived name, this program does not actually authenticate the player to the gameserver itself, but simply authenticates them to show the realmlist. Gameserver authentication happens on the worldserver, not the 'authserver'.
 
+- **repack**: In the context of wow emulation, this refers to a server core that has already been compiled and is only distributed as a binary program. This is the opposite of "building from source".
+
+- **source/from source/build from source**: Refers to setting up a program, often the server core, by downloading the source code and compiling it yourself with a program like Visual Studio.
+    - The benefit of building from source is that it allows you full controls of changing the emulator in any way you want, and is necessary to install most types of modules and patches.
+
 - **worldserver/mangosd**: This is the actual gameserver part of the core.
     - **mangosd** is the name for this program in MaNGOS.
     - **worldserver** is the name for this program in TrinityCore and its derivatives.
+
+- **Debug/Deubgging**: Refers to finding bugs in a program and fixing them. More specifically, it usually refers to building a program in _Debug mode_ and running it in a [debugger](../proficiency/debugging_windows).
 
 - **Dupe**: A very serious bug that allows players to duplicate money or items.
 
@@ -65,6 +76,9 @@ terms and such
 - **ADT**: Map terrain files that store terrain heightmaps, texture data and placed props in the world. Can be edited with Noggit.
     - Can be edited with Noggit
     - **Alpha Maps**: Refers to the layers of textures on the terrain in an ADT.
+    - **Heightmap**: Refers to the actual geometry of the terrain in the game, which is represented as a two-dimensional grid with different heights.
+
+- **Vertex Colors / Vertex Shader**: In the context of WoTLK models, refers to the tints of color that can be painted on ADTs and WMOs
 
 - **WDT**: A single file for each map in the game used to define what **.adt** files are supposed to exist for that map.
 
