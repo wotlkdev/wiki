@@ -4,11 +4,11 @@ title: Core Modules
 nav_order: 7
 ---
 
-## Core Modules
+# Core Modules
 
 The types of modules found in the core tend to fall into one of 5 general categories, **subsystem singletons**, **templates**, **objects**, **special entities** and **utility modules**.
 
-### Subsystem Singletons
+## Subsystem Singletons
 
 These are server-wide systems used to contain logic relating to specific parts of the game, such as Battlegrounds, Spells and Groups.
 - Singleton modules are classes that only have **one** instance in the entire program.
@@ -26,7 +26,7 @@ These are server-wide systems used to contain logic relating to specific parts o
     - [GuildMgr](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Guilds/GuildMgr.h)
     - [LootMgr](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Loot/LootMgr.h)
 
-### Templates
+## Templates
 
 Chunks of data used to define _types_ (not instances) of creatures, quests, spells, achievements, game objects, items and so on.
 
@@ -40,7 +40,7 @@ Chunks of data used to define _types_ (not instances) of creatures, quests, spel
     - [GameObjectTemplate](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Entities/GameObject/GameObjectData.h#:~:text=struct%20GameObjectTemplate) (From database table [gameobject_template](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130143/gameobject+template))
     - [ItemTemplate](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Entities/Item/ItemTemplate.h#:~:text=struct%20TC_GAME_API%20ItemTemplate) (From database table [item_template](https://trinitycore.atlassian.net/wiki/spaces/tc/pages/2130222/item+template) and [Item.dbc](../dbc/Item))
 
-### Special Entities
+## Special Entities
 
 Gameplay entities that are not templates and don't fit into the primary entity type hierarchy.
 - Examples (not exhaustive):
@@ -49,17 +49,17 @@ Gameplay entities that are not templates and don't fit into the primary entity t
     - [Map](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Maps/Map.h#:~:text=class%20TC_GAME_API%20Map)
     - [Vehicle](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Entities/Vehicle/Vehicle.h#:~:text=class%20TC_GAME_API%20Vehicle)
 
-### Utility Modules
+## Utility Modules
 
 Various other classes and files in the core that don't fit any of the above categories, such as the [worldserver main function](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/worldserver/Main.cpp) and most [Database classes](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/database/Database).
 
-### Objects
+## Objects
 
 One of the most important classes in the core is the [Object](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Entities/Object/Object.h#:~:text=class%20TC_GAME_API%20Object) class. This class is the base type for most types of entities in the game, such as `Players`, `Creatures`, `GameObjects` and even `Items`.
 
 The object class itself do not contain a lot of logic, aside from some basic functions to interact with special fields called _UpdateData_ fields.
 
-#### UpdateData
+### UpdateData
 
 To understand the Object type hierarchy, we need to first understand what UpdateData is. The World of Warcraft client has a special protocol for exchanging information about entities in the world known colloquially as _UpdateData_. This is a big chunk of binary data that propagate changes from the server to the client every world update to inform it about changes in various information about entities, such as player and creature health, mana and other stats.
 
@@ -78,7 +78,7 @@ The offsets provided in this header is then used by the `SetXValue()` methods fo
 - For example, changing a players [title](../dbc/CharTitles.dbc) would look like this:
     - `player->SetUInt32(PLAYER_CHOSEN_TITLE, TITLE_ID)`
 
-#### Object Type Hierarchy
+### Object Type Hierarchy
 
 Now that we understand the structure of UpdateData, we can discuss the type hierarchy used to define entities in the game world. The most important types that most developers should know about are marked as bold. Note that not every subclass used in cores have corresponding fields in UpdateData, and it's mostly the basic types that do.
 

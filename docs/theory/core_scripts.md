@@ -4,13 +4,13 @@ title: Core Scripts
 nav_order: 9
 ---
 
-## Core Scripts
+# Core Scripts
 
 Scripts are used to implement special behavior for specific spells, creatures, instances or commands, where the core cannot rely on generic behaviors that generalize to large groups of entities, such as spells or small groups of spells that have highly special behaviors that no other spells have.
 
 All scripts in the core can be found in the [scripts](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/scripts) directory in the core repository. Here, scripts are divided into some generic categories that all have roughly the same format.
 
-### Script Loading
+## Script Loading
 
 Each script category contains a special _loader_ file, that usually has the format `<x>_script_loader.cpp`. For example:
 - [battlefield_script_loader.cpp](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/scripts/Battlefield/battlefield_script_loader.cpp)
@@ -23,13 +23,13 @@ These files all contain a single implemented function called `AddXScripts`, whos
 
 When adding new script files with their own initialization functions, it is **necessary** to both add its function declaration to the corresponding `script_loader` file and also **call** that function inside the script loader function. Not doing this means the added script will not be loaded into the core.
 
-### Script Structure
+## Script Structure
 
 Most script consists of classes that contain **event handlers** and **virtual methods**, and are meant to be extended and implemented by specific script subclasses in the `scripts` folder.
 
 Event handlers are registered in the scripts `Register` method, and can support multiple handlers in the same script, while **virtual methods** are meant to be implemented once by the script subclass. Basic examples of this will be provided below.
 
-### Case study: Spell Scripts
+## Case study: Spell Scripts
 
 Spell scripts are classes that inherit from the [SpellScript](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Spells/SpellScript.h#:~:text=class%20TC_GAME_API%20SpellScript) class.
 - example virtual methods: 
@@ -72,6 +72,6 @@ void AddSC_my_spell_scripts()
 
 To tie a specific spell id to a SpellScript, we use the server world database table [spell_script_names](https://trinitycore.info/en/database/335/world/spell_script_names), where the `ScriptName` column in that table maps to the class name we register in the `RegisterSpellScript` function. This allows the core to easily tie the same spell script to multiple spells without recompiling.
 
-### Other Script Types
+## Other Script Types
 
 Other script types sometimes work similar to Spell scripts, like Aura scripts, while others like Creature scripts are sometimes nest classes of event handlers for more control in how to register behavior. It's usually enough to look at a couple of examples to understand how to implement them for new entities.

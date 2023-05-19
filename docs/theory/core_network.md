@@ -4,7 +4,7 @@ title: Core Network
 nav_order: 8
 ---
 
-## Core Network
+# Core Network
 
 _Opcodes_ in WoW servers refers to the types of packets that the server and client can send to each others. These opcodes all come from reverse-engineering the packets exchanged between Blizzards official servers and the World of Warcraft client, meaning it is very hard (and rarely feasible) to change their structure or even what data they should contain.
 
@@ -18,7 +18,7 @@ All opcodes in the game are defined in [Opcodes.h](https://github.com/TrinityCor
 
 Both inbound and outbound packets in the game are represented by the [WorldPacket](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Server/WorldPacket.h#:~:text=class%20WorldPacket) class, which is just a basic class that can read and write data from a raw binary buffer.
 
-### Sending Packets
+## Sending Packets
 
 When the server sends a packet to the client, it will construct a WorldPacket instance and send it to players usually by any of the following methods:
 
@@ -26,7 +26,7 @@ When the server sends a packet to the client, it will construct a WorldPacket in
 - [Object::SendMessageToSet](): Packets sent to players around a `WorldObject`.
 - [Map::SendToPlayers](): Packets sent to all players in a `Map`.
 
-### Receiving Packets
+## Receiving Packets
 
 The server has can handle incoming packets in one of three [PacketProcessing](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Server/Protocol/Opcodes.h#:~:text=enum%20PacketProcessing) phases:
 
