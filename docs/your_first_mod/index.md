@@ -21,3 +21,6 @@ This section contains a few "first step" tutorials for modding the game. You don
 
 - [Your First Model Edit](./your_first_model_edit)
     - NOT WRITTEN YET. Will teach you how to edit basic WMO and M2 files using WBS.
+
+- [Your First C++ Script](./your_first_cpp_script)
+    - Teaches you the basics of setting up a core script in C++

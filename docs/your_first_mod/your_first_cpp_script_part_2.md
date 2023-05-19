@@ -1,4 +1,11 @@
-# Step 02 - Creating the Script Framework
+---
+layout: default
+title: Your First C++ Script (Part 2) - Script Framework
+nav_order: 6
+---
+
+
+# Your First C++ Script (Part 2) - Script Framework
 
 What we have done so far:
 
