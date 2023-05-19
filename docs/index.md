@@ -16,32 +16,32 @@ Instead of tutorials to do a bunch of very specific things, these guides will fo
 
 ## Table of Contents
 
-- [Introduction](./):
+- [Introduction](./introduction):
     - A few introductory essays on what WoW modding is and why people do it.
 
-- [Types of Mods](../types_of_mods):
+- [Types of Mods](./types_of_mods):
     - Explanations for the kinds of mods people create for the game.
 
-- [Server Setup](../server_setup):
+- [Server Setup](./server_setup):
     - Pointers for easily setting up basic test servers, followed by a longer discussion on how to choose a server core for more serious projects.
 
-- [Your First Mod](../your_first_mod):
+- [Your First Mod](./your_first_mod):
     - Introductory tutorials for understanding how modding works.
 
-- [Proficiency](../proficiency):
+- [Proficiency](./proficiency):
     - Some words of advice and suggestions for how to become good at wow modding.
 
-- [Tutorials](../tutorials):
+- [Tutorials](./tutorials):
     - Some more specific guides and tutorials aimed at beginners.
     
-- [Glossary](../glossary): 
+- [Glossary](./glossary): 
     - Explanations for various terms 
 
-- [Tools](../tools):
+- [Tools](./tools):
     - Links to up-to-date modding tools
 
-- [DBC](../dbc)/[SQL](../sql): 
+- [DBC](./dbc)/[SQL](./sql): 
     - Contains references to the various database tables in the game.
 
-- [Communities](../communities):
+- [Communities](./communities):
     - Contains website links and discord invites to wow modding communities.
