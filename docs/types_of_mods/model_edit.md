@@ -20,3 +20,9 @@ Model editors often show proficiency in:
 - 3D modeling in Blender
 - Knowledge of the basic 3D model formats used by the game, their features and limitations.
 - Problem solving, because things can easily go wrong.
+
+<table class="gt" style="table-layout: fixed; width: 100%;">
+    <tr>
+        <td><p><img class="mi" src="https://i.imgur.com/jVvto4z.png">WBS is a popular plugin for editing 3D models.</p></td>
+    </tr>
+</table>
