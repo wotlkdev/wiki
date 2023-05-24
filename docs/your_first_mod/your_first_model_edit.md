@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Your First Model Edit (Unfinished)
+title: Your First Model Edit (UNFINISHED)
 nav_order: 4
 ---
 
-# Your First: Model Edit (Unfinished)
+# Your First: Model Edit (UNFINISHED)
 
 This guide will teach you the very basics of customizing 3D models in Blender using the WoW Blender Studio Addon.
 
@@ -62,6 +62,6 @@ For the purpose of trying out WBS, these sections are also not strictly necessar
 - Scripting
 - Material Editor
 
-## WoW Blender Studio (WBS)
+## WoW Blender Studio (WBS) (NOT WRITTEN YET)
 
-[[WRITE IT]]
+We haven't had the time to write this guide yet, but there is a really good guide on [model-changing.net](https://model-changing.net/index.php?app=tutorials&module=tutorials&controller=view&id=164) for getting started.
