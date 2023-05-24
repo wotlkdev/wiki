@@ -62,6 +62,6 @@ cMaNGOS is an actively maintained emulator for the three first expansions of the
 - **Based on:** Nothing
 - **Game Version:** None
 - **License:** MIT
-- **Scripting Languages:** NAI, C++
+- **Scripting Languages:** Luau, C++
 
 NovusCore is an MMORPG client and server written from scratch currently under development and is not yet fit for use.
