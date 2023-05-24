@@ -136,6 +136,9 @@
 
     for(let child in all_children)
     {
-        navbar.appendChild(all_children[child]);
+        if(child.length > 0)
+        {
+            navbar.appendChild(all_children[child]);
+        }
     }
 </script>
