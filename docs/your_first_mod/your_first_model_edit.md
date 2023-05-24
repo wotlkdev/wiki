@@ -26,10 +26,11 @@ M2 files are the most common type of models in the game, and is used for things 
 - Items
 - Spells
 - Props
+- UI models
 
-M2 models can be either **animated** or **non-animated**. Non-animated M2s are significantly easier to work with than animated ones, and to this day many tools still struggle to handle animated M2s correctly.
+M2 models support animations, but are also commonly used without animations. Most tools do not support editing M2 animations, but working with M2 mesh data is very common even for M2s with animations.
 
-M2 models have the `.m2` file extension, and are **always** accompanied by one or more `.skin` files, which contains data for viewing the model at different distances (LOD). Contrary to what many beginners believe, the `.skin` file does **not** contain texture data or creature variations.
+M2 models have the `.m2` file extension, and are **always** accompanied by one or more `.skin` files in WoTLK, which contains data for viewing the model at different distances (LOD). Contrary to what many beginners believe, the `.skin` file are **not** used for creature variations.
 
 [[image of m2 file with .skin files]]
 
