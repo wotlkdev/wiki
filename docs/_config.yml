@@ -1,5 +1,5 @@
-title: WoW Modding Docs
-description: Port of the Read the Docs theme to Jekyll to use with GitHub Pages.
+title: WoTLK Modding Wiki
+description: WoTLK Development and mods
 remote_theme: wotlkdev/wiki
 
 # Theme settings:

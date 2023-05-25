@@ -7,7 +7,7 @@ webrick:
     Access-Control-Allow-Origin: "*"
 
 # Theme settings
-site_author: Carlos Pereira Atencio
+#site_author: Carlos Pereira Atencio
 repo_url: 'https://github.com/wotlkdev/wiki'
 edit_on_github: true
 github_docs_folder: false
