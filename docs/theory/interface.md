@@ -34,7 +34,7 @@ GlueXML files are placed in the `Interface/GlueXML` directory, and uses the .toc
 - `RealmList.lua` / `RealmList.xml`: Defines the realm list box
 - `GlueStrings.lua` / `GlueStrings.xml`: Defines the various text fields found in the other "Glue" interfaces.
 
-<img src="https://i.imgur.com/HdVRxOI.png">
+<img class="mi ili" src="https://i.imgur.com/HdVRxOI.png">
 
 ## FrameXML
 
@@ -42,13 +42,13 @@ FrameXML files are placed in the `Interface/FrameXML` directory, and uses the .t
 
 There are too many FrameXML interface files to go over all of them, but it is generally not too difficult to find what you're looking for aside from a few cases where FrameXML is actually loaded from the `AddOn` directory instead, so it's important to keep an eye on both.
 
-<img src="https://i.imgur.com/Q3VdMfS.png">
+<img class="mi ili" src="https://i.imgur.com/Q3VdMfS.png">
 
 ## AddOns
 
 Internal AddOns are placed in the `Interface/AddOns` directory. Inside this directory there are additional directories that all contain their own `.toc` files, which works the same way as player AddOns.
 
-<img src="https://i.imgur.com/OTNnFt8.png">
+<img class="mi ili" src="https://i.imgur.com/OTNnFt8.png">
 
 ## Native Functions
 

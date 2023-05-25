@@ -34,7 +34,7 @@ This is the database used for **static data**, and can be both shared by multipl
 
 Below is an example layout of three worldservers, all with their own private character database, and all sharing the same Auth database. Worldserver A and B share the same world database while worldserver C has its own private world database, maybe because it implements some kind of custom features that the other worldservers don't.
 
-<img src="https://i.imgur.com/Snryg36.png">
+<img class="mi ili" src="https://i.imgur.com/Snryg36.png">
 
 ## Source World Database
 

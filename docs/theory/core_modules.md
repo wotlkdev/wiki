@@ -71,7 +71,7 @@ This type hierarchy is what lays the foundation for the `Object` type hiearchy u
 
 All names used for UpdateData fields can be found in [UpdateFields.h](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Entities/Object/Updates/UpdateFields.h). Because these are derived from the client itself, it is not possible (feasible) to modify them or add new updatedata fields.
 
-<img src = "https://i.imgur.com/uE0jMdQ.png">
+<img class="mi ili" src = "https://i.imgur.com/uE0jMdQ.png">
 
 
 The offsets provided in this header is then used by the `SetXValue()` methods found in the `Object` class, such as `SetUInt32()` and `SetUInt8()` to modify the updatedata attached to that entity.

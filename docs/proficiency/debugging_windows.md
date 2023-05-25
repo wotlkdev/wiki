@@ -24,7 +24,7 @@ If you are using a repack, you cannot recompile the program in debug mode. You n
 
 Building in Debug mode is as easy as opening the project in Visual Studio and changing the build type, then recompile. Your new core folder should be built into the same base folder as your previous builds, but into `Debug` instead of `RelWithDebInfo` or `Release`. You can copy over your map/dbc/.conf/mysql/libcrypto files from the previous build.
 
-<img class="img_80" src="https://i.imgur.com/wXu09Jo.png">
+<img class="mi ili" src="https://i.imgur.com/wXu09Jo.png">
 
 ### TSWoW
 
@@ -58,19 +58,19 @@ For most modern cores, this is done by setting the `MaxCoreStuckTime` setting to
 
 First, we start our debug version of the worldserver the way you usually do for your core. Here, we should double-check that we are indeed running the Debug build of  our core:
 
-<img class="img_80" src="https://i.imgur.com/UqOOZkX.png">
+<img class="mi ili" src="https://i.imgur.com/UqOOZkX.png">
 
 Then, we should open the Visual Studio project for the core.
 
-<img class="img_80" src="https://i.imgur.com/p4MGR0C.png">
+<img class="mi ili" src="https://i.imgur.com/p4MGR0C.png">
 
 Then, we navigate to the "Debug" menu window and select `Attach to Process`.
 
-<img class="img_80" src="https://i.imgur.com/xCHMMcX.png">
+<img class="mi ili" src="https://i.imgur.com/xCHMMcX.png">
 
 This should bring up a dialog like below, where we can search for `worldserver` to easily find our process, and then click "Attach" to attach the debugger.
 
-<img class="img_80" src="https://i.imgur.com/cnQMPOU.png">
+<img class="mi ili" src="https://i.imgur.com/cnQMPOU.png">
 
 Once attached, the layout of our Visual Studio Window should change slightly to show the following information:
 
@@ -80,7 +80,7 @@ Once attached, the layout of our Visual Studio Window should change slightly to 
 
 3. If the call stack window is not showing, you may need to click this little button
 
-<img class="img_80" src="https://i.imgur.com/PmRTi8b.png">
+<img class="mi ili" src="https://i.imgur.com/PmRTi8b.png">
 
 ## Breakpoints
 
@@ -90,13 +90,13 @@ By default, the debugger doesn't do anything to the process it attaches to, and 
 
 A breakpoint is a little toggle we can apply to individual lines of code where we want the debugger to stop the program from executing. In Visual Studio, we can easily add a breakpoint by clicking in the sidebar to the left of a line in our code:
 
-<img class="img_80" src="https://i.imgur.com/Cdz3Pih.png">
+<img class="mi ili" src="https://i.imgur.com/Cdz3Pih.png">
 
 When we click it, a little red circle should appear. We have now instructed the debugger to stop the program from executing when it reaches this point. The line we've stopped it at now happens to be the internal code that is fired when a player gains a level.
 
 Let's hop onto the game and try to level up and see if we can get the debugger to activate.
 
-<img class="img_80" src="https://i.imgur.com/0FyOWNN.png">
+<img class="mi ili" src="https://i.imgur.com/0FyOWNN.png">
 
 If everything went right, nothing should happen in the game when you type this command, as if the server had crashed. Instead, the Visual Studio window might pop up (if not, you may need to bring it up manually), and some things should've visible changed:
 
@@ -104,7 +104,7 @@ If everything went right, nothing should happen in the game when you type this c
 
 2. Our call stack window should contain multiple lines of text. This is an outline of the hierarchy of function calls to where we stopped the program, this is the same kind of call stacks that we discussed in the previous [Crashlogs](./crashlogs) tutorial.
 
-<img class="img_80" src="https://i.imgur.com/KTTZNd5.png">
+<img class="mi ili" src="https://i.imgur.com/KTTZNd5.png">
 
 ### Breakpoint Controls
 
@@ -118,11 +118,11 @@ Just stopping the executable isn't too useful on its own, what we want is a way 
 
 4. Step out - Resumes execution and stops the debugger again once we've exited the current function.
 
-<img class="img_80" src="https://i.imgur.com/KoRh12U.png">
+<img class="mi ili" src="https://i.imgur.com/KoRh12U.png">
 
 Let's step press "Step over" (3) and move the cursor into the function body:
 
-<img class="img_80" src="https://i.imgur.com/JKsX8IA.png">
+<img class="mi ili" src="https://i.imgur.com/JKsX8IA.png">
 
 ### Inspecting Variables
 
@@ -130,11 +130,11 @@ When we have suspended execution of a program with the debugger, we can inspect 
 
 Here, we inspect the "level" argument that the GiveLevel function accepted. Since we started at level 1 and leveled up to level 2, we can see that the argument to this function is "2".
 
-<img class="img_80" src="https://i.imgur.com/CK3dN2f.png">
+<img class="mi ili" src="https://i.imgur.com/CK3dN2f.png">
 
 We can also inspect other variables in the current program, like "oldLevel". As we do, we might get a strange surprise:
 
-<img class="img_80" src="https://i.imgur.com/OMi2Jpp.png">
+<img class="mi ili" src="https://i.imgur.com/OMi2Jpp.png">
 
 How come the program thinks our "old level" is 204?
 
@@ -146,7 +146,7 @@ In C++, uninitialized memory can contain more or less anything, and the number 2
 
 If we move the debugger another step forward, we'll instead get the correct current level of our character:
 
-<img class="img_80" src="https://i.imgur.com/Sg5GybN.png">
+<img class="mi ili" src="https://i.imgur.com/Sg5GybN.png">
 
 ## Inspecting the Callstack
 
@@ -156,13 +156,13 @@ If we click on the second line from the top in the call stack window, we should 
 
 _Note: Visual Studio highlights the line **right below** the current function call when traversing the call stack. This can be a little confusing at first_
 
-<img class="img_80" src="https://i.imgur.com/hzbWSDn.png">
+<img class="mi ili" src="https://i.imgur.com/hzbWSDn.png">
 
 
 
 This allow us to inspect even more variables that went into how the current function ended up being called. If we keep scrolling down in the call stack window, we can even get as far back as the programs main function.
 
-<img class="img_80" src="https://i.imgur.com/zVVg3Lw.png">
+<img class="mi ili" src="https://i.imgur.com/zVVg3Lw.png">
 
 ### Resuming Execution
 
@@ -172,21 +172,21 @@ _Note: If you forgot to turn off the freeze detector, it's possible the game ins
 
 _Note: If you took very long in the debugging session, it's possible the game logs you out_
 
-<img class="img_80" src="https://i.imgur.com/Qc130p8.png">
+<img class="mi ili" src="https://i.imgur.com/Qc130p8.png">
 
-<img class="img_80" src="https://i.imgur.com/ebqMfbC.png">
+<img class="mi ili" src="https://i.imgur.com/ebqMfbC.png">
 
 ## Debugging Crashes
 
 By attaching a debugger, we can also cause it to stop execution on unhandled exceptions or crash signals to see what exactly happens when the game crashes. This behavior is enabled by default in Visual Studio for most types of exceptions and crashes, but we can still review our settings in the `Exception Settings` window:
 
-<img class="img_80" src="https://i.imgur.com/MBNL26n.png">
+<img class="mi ili" src="https://i.imgur.com/MBNL26n.png">
 
 Here's how the code window might look when the game encounters a crash, the only difference to when we suspend on a breakpoint is that there's usually a little box that details the exact exception that occurred, but otherwise we can inspect variables and the callstack just like before.
 
 _This crash was caused by me on purpose by just smashing in a bunch of random garbage into the games memory, so there's no point in trying to analyze it_
 
-<img class="img_80" src="https://i.imgur.com/v1wiIg3.png">
+<img class="mi ili" src="https://i.imgur.com/v1wiIg3.png">
 
 ## Advanced Breakpoints
 
@@ -202,40 +202,40 @@ For more complicated scenarios where we might want some more control over when a
 
 - Dependend Breakpoint: A breakpoint that can behave like multiple of the above types of breakpoints at the same time, and offers some even more advanced configurations.
 
-<img class="img_80" src="https://i.imgur.com/55lSU3z.png">
+<img class="mi ili" src="https://i.imgur.com/55lSU3z.png">
 
 ### Conditional Breakpoints
 
 If we select the same line as before and instead insert a _Conditional Breakpoint_, the following window should appear.
 
-<img class="img_80" src="https://i.imgur.com/5fp5M5z.png">
+<img class="mi ili" src="https://i.imgur.com/5fp5M5z.png">
 
 This allows us to type in a valid C++ expression where we can make our breakpoint depend on the values of variables in the program. Let's make it so that our breakpoint only fires when the new level set is 5.
 
 Once we've finished entering the expression we want to check, we can close the breakpoint settings window.
 
-<img class="img_80" src="https://i.imgur.com/pjMQO6K.png">
+<img class="mi ili" src="https://i.imgur.com/pjMQO6K.png">
 
 Now, we can keep leveling up our character ingame using the `.levelup 1` command, and should see that the program only actually stops when the player is about to reach level 5.
 
-<img class="img_80" src ="https://i.imgur.com/s30JFWO.png">
+<img class="mi ili" src ="https://i.imgur.com/s30JFWO.png">
 
 Conditional breakpoints are sometimes a great alternative to recompiling the core when we need to check very specific things, but still have their limitation. For example, calling functions in our expression is not allowed, even when they are const, and it is sometimes necessary to recompile so we can write checks that only check variables directly.
 
-<img class="img_80" src = "https://i.imgur.com/J9IrsJG.png">
+<img class="mi ili" src = "https://i.imgur.com/J9IrsJG.png">
 
 ### Tracepoints
 
 Tracepoints are a type of breakpoints that prints out a message instead of stopping execution. Creating them is as simple as conditional breakpoints, we just right-click the left sidebar where we would normally create breakpoints and we'll get the following menu pop up
 
-<img class="img_80" src="https://i.imgur.com/uC2mUxj.png">
+<img class="mi ili" src="https://i.imgur.com/uC2mUxj.png">
 
 Here, we can enter in any message, and include any variables we want to print out inside curly `{}` braces.
 
-<img class="img_80" src="https://i.imgur.com/GdxYXV5.png">
+<img class="mi ili" src="https://i.imgur.com/GdxYXV5.png">
 
 Now, if we run the `.levelup 1` command again, we should see that the game no longer stops. Instead, we can open up the debuggers `Output` window, and should see the message we specified earlier:
 
-<img class="img_80" src="https://i.imgur.com/BmF77RS.png">
+<img class="mi ili" src="https://i.imgur.com/BmF77RS.png">
 
 Tracepoints are another great alternative to recompiling to insert log statements into the source itself, but have similar limitations to conditional breakpoints in that they cannot call functions.

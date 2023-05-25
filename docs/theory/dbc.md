@@ -46,7 +46,7 @@ There is no great general resource for all of these relationships and all the th
 DBC files can be edited by table editors like [WDBXEditor](https://github.com/WowDevTools/WDBXEditor) or modding frameworks like _TSWoW_, and a documentation of all the files and columns that exist in those files for 3.3.5 can be found in the [DBC](../dbc) section on this website.
 
 _Example of editing DBC file with WDBXEditor_
-<img src="https://i.imgur.com/8P38ecN.png">
+<img class="mi ili" src="https://i.imgur.com/8P38ecN.png">
 
 _Example of generating DBC data with TSWoW_
 

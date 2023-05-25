@@ -13,7 +13,7 @@ This section will explain the root level nodes involved in making the game run. 
 - [The worldserver](./core)
 - [The database](./database)
 
-<img src="https://i.imgur.com/AMEWUrv.png">
+<img class="mi ili" src="https://i.imgur.com/AMEWUrv.png">
 
 ## Client
 
@@ -39,47 +39,47 @@ When the client first connects to the game, it uses the address in its `realmlis
 
 This is the address to an `authserver`, and when the player enters their credentials into the client this is the first server that it communicates with.
 
-<img src="https://i.imgur.com/d8sX07b.png">
+<img class="mi ili" src="https://i.imgur.com/d8sX07b.png">
 
 The authserver will then check the credentials with the database to see if this is a valid account with a correct password
 
-<img src="https://i.imgur.com/cTHo3cO.png">
+<img class="mi ili" src="https://i.imgur.com/cTHo3cO.png">
 
 If the check went well, the authserver will respond to the client by presenting the list of realms available. It might seem a little strange that the authserver responds with the worldservers IP address when they are often hosted on the exact same machine, but this is not always necessarily the case. Sometimes, the worldserver is hosted somewhere completely different, and sometimes there are multiple worldservers.
 
-<img src="https://i.imgur.com/nmZ2q73.png">
+<img class="mi ili" src="https://i.imgur.com/nmZ2q73.png">
 
 Once the player has selected a realm, they will completely close the connection with the authserver, and instead connect to a worldserver, yet again sending its username and password for another round of authentication.
 
-<img src="https://i.imgur.com/6NDV0VE.png">
+<img class="mi ili" src="https://i.imgur.com/6NDV0VE.png">
 
 Many beginners are confused with why the worldserver authenticates players again when they've already done this with an authserver. The reason for this is that it's simply the easiest way to ensure that players are who they say that they are given what we have to work with from the protocol that the client uses.
 
-<img src="https://i.imgur.com/SfMXZaE.png">
+<img class="mi ili" src="https://i.imgur.com/SfMXZaE.png">
 
 If the player provided a correct password to the worldserver, it will respond by sending the list of characters currently in the players account
 
-<img src="https://i.imgur.com/CScoKOk.png">
+<img class="mi ili" src="https://i.imgur.com/CScoKOk.png">
 
 For the purpose of this tutorial, we'll skip the case where players might create new characters, as that's just its own round of packets that don't teach us a lot about how the protocol works in general.
 
 So once the player has selected a character to play on and enters the game world, they send their selection to the server and displays the loading screen.
 
-<img src="https://i.imgur.com/iDiUCCT.png">
+<img class="mi ili" src="https://i.imgur.com/iDiUCCT.png">
 
-<img src="https://i.imgur.com/gRJccK7.png">
+<img class="mi ili" src="https://i.imgur.com/gRJccK7.png">
 
-<img src="https://i.imgur.com/HN4Vct2.png">
+<img class="mi ili" src="https://i.imgur.com/HN4Vct2.png">
 
 Once we have loaded the player, we spawn them into the world on the server and informs the client that it can start playing.
 
-<img src="https://i.imgur.com/Dlvk7Qt.png">
+<img class="mi ili" src="https://i.imgur.com/Dlvk7Qt.png">
 
 Once the player has spawned, they are added to the normal gameloop on the server and will begin to send and receive commands and updates back and forth. 
 
-<img src="https://i.imgur.com/8zM6VqB.png">
+<img class="mi ili" src="https://i.imgur.com/8zM6VqB.png">
 
 
 Occasionally, the server will save the players data back into the database. Sometimes as a response to various special events like trades and sometimes when enough time has passed.
 
-<img src="https://i.imgur.com/SplbacF.png">
+<img class="mi ili" src="https://i.imgur.com/SplbacF.png">

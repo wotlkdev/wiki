@@ -8,11 +8,11 @@ nav_order: 6
 
 The worldserver executable has three primary phases: initialization, game loop, shutdown and then the fourth in the crash handler. The execution flow of the primary phases are relatively straightforward, while the crash handler is a special procedure that is only called when something goes wrong.
 
-<img src="https://i.imgur.com/M25FjTR.png">
+<img class="mi ili" src="https://i.imgur.com/M25FjTR.png">
 
 ## Initialization
 
-<img src="https://i.imgur.com/ZyhkwHU.png">
+<img class="mi ili" src="https://i.imgur.com/ZyhkwHU.png">
 
 The initialization is handled through primarily two functions, `main` and `World::SetInitialWorldSettings`, which themselves call tons of other smaller functions for initializing specific subsystems.
 
@@ -21,7 +21,7 @@ The initialization is handled through primarily two functions, `main` and `World
         - [World::LoadConfigSettings](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/World/World.cpp#:~:text=void%20World::LoadConfigSettings(bool%20reload)): Loads configuration files (worldserver.conf) into the Configuration Manager.
 
 ## Game Loop
-<img src="https://i.imgur.com/ycTFXZq.png">
+<img class="mi ili" src="https://i.imgur.com/ycTFXZq.png">
 
 The main game loop is the phase that handles what happens to the world as players enter it, reacting to network packets, moving entities around, executing combat and so on. 
 
