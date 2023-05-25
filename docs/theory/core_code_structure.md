@@ -31,7 +31,7 @@ _For TSWoW, the core is not stored in the [root repository](https://github.com/t
             - [authserver](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/authserver): Code building the authserver executable
             - [worldserver](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/worldserver): Code building the worldserver executable (does not contain gameplay code)
             - [database](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/database): Code used for interacting with the database (used by both authserver and worldserver)
-            - [shared](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/database): Similar to the [common](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/common) library, but often more specifically for authserver/worldserver stuff.
+            - [shared](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/database): Similar to the [common](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/common) library, but more specifically for authserver/worldserver stuff.
             - [**scripts**](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/scripts): Code used to script specific behavior in the game, such as very specific spells, dungeon bosses, instances, battlegrounds and chat commands.
             - [**game**](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/game): Contains all primary game logic, by far the most important directory in the entire core.
                 - Usually split into various modules and subsystems, see the below section on "Core Modules".
