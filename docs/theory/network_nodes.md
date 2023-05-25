@@ -6,7 +6,9 @@ nav_order: 1
 
 # Network Nodes
 
-This section will explain the root level nodes involved in making the game run. These are
+In this article, we will learn about the steps and entities involved in connecting the wow client to the game as an introduction to understand the games overall architecture.
+
+The entities we will learn about are:
 
 - [The client](./client)
 - The authserver
@@ -17,13 +19,13 @@ This section will explain the root level nodes involved in making the game run. 
 
 ## Client
 
-The client is relatively self-explanatory. It is the part of the game that runs on the players computer, and includes all the games assets, database tables, `wow.exe` and the game window itself.
+The client is relatively self-explanatory. It is the part of the game that runs on the players computer, and includes all the games assets, database tables, and `wow.exe`.
 
 ## AuthServer
 
 This is the part of the server core responsible for handling initial player connections and to present the list of realms that are available to connect to.
 
-_Before TrinityCore, this component used to be called `realmd`, since its purpose is to list all the available realms._
+_Before TrinityCore, this component used to be called `realmd`, as its primary purpose is to list all the available realms._
 
 ## Worldserver
 

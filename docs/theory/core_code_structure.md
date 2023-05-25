@@ -4,7 +4,7 @@ title: Core Code Structure
 nav_order: 5
 ---
 
-## Core Code Structure
+# Core Code Structure
 
 Most cores follow the exact same file structure, with only minor variations.
 
