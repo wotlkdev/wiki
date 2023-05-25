@@ -6,7 +6,9 @@ nav_order: 8
 
 # Core Network
 
-_Opcodes_ in WoW servers refers to the types of packets that the server and client can send to each others. These opcodes all come from reverse-engineering the packets exchanged between Blizzards official servers and the World of Warcraft client, meaning it is very hard (and rarely feasible) to change their structure or even what data they should contain.
+_Opcodes_ in WoW servers refers to the types of commands that the server and client can send to each others. An _opcode_ corresponds to a specific binary packet structure that the client and server will know how to read.
+
+These opcodes and packet structures all come from reverse-engineering the packets exchanged between Blizzards official servers and the client, meaning it is very hard (and rarely feasible) to change their structure or even what data they should contain.
 
 All opcodes in the game are defined in [Opcodes.h](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Server/Protocol/Opcodes.h#:~:text=enum%20Opcodes), and have three common prefixes:
 - `MSG_`: Means that the packet is sent both by the server to the clients, and from the clients to the server.
@@ -28,7 +30,7 @@ When the server sends a packet to the client, it will construct a WorldPacket in
 
 ## Receiving Packets
 
-The server has can handle incoming packets in one of three [PacketProcessing](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Server/Protocol/Opcodes.h#:~:text=enum%20PacketProcessing) phases:
+The server can handle incoming packets in one of three [PacketProcessing](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Server/Protocol/Opcodes.h#:~:text=enum%20PacketProcessing) phases:
 
 - **Inplace**: Packets handled directly on the network thread, cannot access much of the game world at all and mostly used for unhandled packets.
 - **ThreadUnsafe**: Packets that need to be handled in the main thread inside [World::UpdateSessions]().
@@ -46,8 +48,6 @@ There are also various rules deciding for what [SessionStatus](https://github.co
 
 - **Never / Unimplemeted**: Packet is not handled.
 
-All incoming packet handlers 
-
 Incoming packet handlers are all registered in [Opcodes.cpp](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Server/Protocol/Opcodes.cpp#:~:text=#define%20DEFINE_SERVER_OPCODE_HANDLER).
 
 This registry has the format:
@@ -61,6 +61,6 @@ Where:
 - **handler_function**: is a function pointer to the function that should process the packet when the server can handle it.
 
 For example, if we look at the opcode handler for `CMSG_CAST_SPELL`, we get the following properties:
-- Player must be logged in to send this packet
-- This packet can be processed in map updates.
-- This packet is processed in [WorldSession::HandleSpellCastOpcode](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Handlers/SpellHandler.cpp#:~:text=void%20WorldSession::HandleCastSpellOpcode)
+- Player must be logged in to send it.
+- It can be processed in map updates.
+- It is processed by the function [WorldSession::HandleSpellCastOpcode](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/game/Handlers/SpellHandler.cpp#:~:text=void%20WorldSession::HandleCastSpellOpcode)

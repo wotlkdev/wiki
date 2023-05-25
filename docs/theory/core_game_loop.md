@@ -6,7 +6,7 @@ nav_order: 6
 
 # Core Game Loop
 
-The worldserver executable has three primary phases: initialization, game loop, shutdown and then the fourth in the crash handler. The execution flow of the primary phases are relatively straightforward, while the crash handler is a special procedure that is only called when something goes wrong.
+The worldserver executable has three primary phases: initialization, game loop, shutdown and then additionally a crash handler procedure. The execution flow of the primary phases are relatively straightforward, while the crash handler is a special procedure that is only called when something goes wrong.
 
 <img class="mi ili" src="https://i.imgur.com/M25FjTR.png">
 
