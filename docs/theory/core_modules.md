@@ -51,7 +51,7 @@ Gameplay entities that are not templates and don't fit into the primary entity t
 
 ## Utility Modules
 
-Various other classes and files in the core that don't fit any of the above categories, such as the [worldserver main function](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/worldserver/Main.cpp) and most [Database classes](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/database/Database).
+Various other classes and files in the core that don't fit any of the above categories, such as the [worldserver main function](https://github.com/TrinityCore/TrinityCore/blob/3.3.5/src/server/worldserver/Main.cpp) and [Database classes](https://github.com/TrinityCore/TrinityCore/tree/3.3.5/src/server/database/Database).
 
 ## Objects
 
