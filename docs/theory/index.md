@@ -6,9 +6,9 @@ nav_exclude: true
 
 # Theory
 
-This section is a top-down deeper look into the various components that makes up the game, all the way from the client to the server.
+This section is a top-down deeper look into the various components that makes up the game, all the way from the client to the server. It is meant to be an overview meant for beginners, and not a replacement for reading your cores documentation or the technical specifications on the [wowdev.wiki](https://wowdev.wiki).
 
-While there are some technical differences between different server cores, we will attempt to stick to the things that are shared between them, but strictly these guides will be based on [TrinityCore](https://www.trinitycore.org/)
+Most things in these docs should apply regardless of what core you use, but the guides will themselves refer to [TrinityCore](https://www.trinitycore.org/).
 
 ## Table of Contents
 
