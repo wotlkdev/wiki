@@ -10,17 +10,17 @@ This section contains a few "first step" tutorials for modding the game. You don
 
 ## Table of Contents
 
-- [Your First Client Edit](./your_first_client_edit)
-    - Teaches you how client asset files work and how to work with MPQ files and folders.
+- [**Your First Client Edit**](./your_first_client_edit)
+    - _Teaches you how client asset files work and how to work with MPQ files and folders._
 
-- [Your First Map Edit](./your_first_map_edit)
-    - Teaches you the basics of the Noggit Red map editor
+- [**Your First Map Edit**](./your_first_map_edit)
+    - _Teaches you the basics of the Noggit Red map editor._
 
-- [Your First Data Edit](./your_first_data_edit)
-    - Teaches you how to work with DBC files using the WDBX editor, and server database tables using HeidiSQL.
+- [**Your First Data Edit**](./your_first_data_edit)
+    - _Teaches you how to work with DBC files using the WDBX editor, and server database tables using HeidiSQL._
 
-- [Your First Model Edit](./your_first_model_edit)
-    - NOT WRITTEN YET. Will teach you how to edit basic WMO and M2 files using WBS.
+- [**Your First Model Edit**](./your_first_model_edit)
+    - _NOT WRITTEN YET. Will teach you how to edit basic WMO and M2 files using WBS._
 
-- [Your First C++ Script](./your_first_cpp_script)
-    - Teaches you the basics of setting up a core script in C++
+- [**Your First C++ Script**](./your_first_cpp_script)
+    - _Teaches you the basics of setting up a core script in C++._

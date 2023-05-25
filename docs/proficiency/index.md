@@ -8,17 +8,17 @@ nav_exclude: true
 
 This section contains advice and a few slightly more advanced guides to become .
 
-- [Asking Questions](./asking_questions)
-    - When and how to ask good questions
+- [**Asking Questions**](./asking_questions)
+    - _When and how to ask good questions_
 
-- [Computer Skills](./computer_skills)
-    - Basics about what computer skills are required for modding
+- [**Computer Skills**](./computer_skills)
+    - _Basics about what computer skills are required for modding_
 
-- [Crashlogs](./crashlogs)
-    - Guide to reading core crashlogs and figuring out crashes.
+- [**Crashlogs**](./crashlogs)
+    - _Guide to reading core crashlogs and figuring out crashes._
 
-- [Tips and Tricks](./tips_and_tricks)
-    - Various tips and tricks to make modding easier.
+- [**Tips and Tricks**](./tips_and_tricks)
+    - _Various tips and tricks to make modding easier._
 
-- [Debugging (Windows)](./debugging_windows)
-    - Guide to using Visual Studio to debug the worldserver on Windows.
+- [**Debugging (Windows)**](./debugging_windows)
+    - _Guide to using Visual Studio to debug the worldserver on Windows._
