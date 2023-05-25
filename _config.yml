@@ -8,7 +8,7 @@ webrick:
 
 # Theme settings
 site_author: Carlos Pereira Atencio
-repo_url: 'https://github.com/ihm-tswow/wow-intro-tutorials-drafts'
+repo_url: 'https://github.com/wotlkdev/wiki'
 edit_on_github: true
 github_docs_folder: false
 sticky_navigation: true

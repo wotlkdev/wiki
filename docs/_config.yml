@@ -1,10 +1,10 @@
 title: WoW Modding Docs
 description: Port of the Read the Docs theme to Jekyll to use with GitHub Pages.
-remote_theme: ihm-tswow/wow-intro-tutorials-drafts
+remote_theme: wotlkdev/wiki
 
 # Theme settings:
 #site_author: Carlos Pereira Atencio
-repo_url: "https://github.com/ihm-tswow/wow-intro-tutorials-drafts"
+repo_url: "https://github.com/wotlkdev/wiki"
 edit_on_github: true
 github_docs_folder: true
 sticky_navigation: true
