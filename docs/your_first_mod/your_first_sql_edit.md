@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your First SQL Edit
-nav_order: 4
+nav_order: 5
 ---
 
 # Your First: SQL Edit

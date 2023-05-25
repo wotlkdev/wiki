@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Your First C++ Script (Part 1) (UNFINISHED)
-nav_order: 5
+nav_order: 7
 ---
 
 # Your First C++ Script (Part 1) (UNFINISHED) - Creating the Files
