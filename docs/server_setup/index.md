@@ -6,7 +6,11 @@ nav_exclude: true
 
 # Server Setup
 
-Depending on what type of project you're planning to create, choosing a server core may be a difficult or a simple choice. This guide is split into two depending on what you need the server for.
+Regardless of what type of project you're planning to create, you will need to set up a server core that you can connect your client to in order to log into the game.
+
+Depending on what type of mods you're interested in and whether you're planning to create a publicly hosted private server, selecting a core can be a minor or very serious consideration.
+
+## Table of Contents
 
 - [**Short Version**](./core_short)
     - _For when you just want a server that's easy to set up to try out clientside mods._
