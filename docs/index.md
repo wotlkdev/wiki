@@ -6,8 +6,6 @@ nav_exclude: true
 
 # WoTLK Modding Introduction
 
-_This website is a work in progress and will likely move to a different address, but should now be in a state where most guides can be of some use._
-
 This is a collection of guides and tutorials for learning how to create mods and custom content for the World of Warcraft: Wrath of the Lich King expansion aimed at people who are completely new to modding.
 
 The WoW modding scene is almost two decades old, and a lot of information is scattered all across the web and with tons of outdated information that can be very confusing to anyone who is completely new.
