@@ -23,7 +23,7 @@ The aim of this website is to provide up-to-date information about _what wow mod
     - _The kinds of mods people create for the game._
 
 - [**Server Setup**](./server_setup):
-    - _Pointers for easily setting up basic test servers, followed by a longer discussion on how to choose a server core for more serious projects._
+    - _Setting up a server for various needs and scenarios._
 
 - [**Your First Mod**](./your_first_mod):
     - _Introductory tutorials for understanding how modding works._
