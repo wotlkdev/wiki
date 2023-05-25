@@ -27,7 +27,7 @@ The main game loop is the phase that handles what happens to the world as player
 
 The game loop is itself divided into three primary phases:
 
-- **Early Updates**: Handles various things mostly related to cleaning up
+- **Early Updates**: Various global things like cleanup, who lists etc.
 - **Map Updates**: Updates individual maps (Kalimdor, Eastern Kingdoms, Outland, Instances, Battlegrounds etc)
     - **Primary Map Updates**: Multithreaded, where almost all game logic happens
     - **Delayed Map Updates**: Single-threaded, handles minor things like moving transports and cross-map spells
