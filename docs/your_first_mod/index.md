@@ -16,7 +16,7 @@ This section contains a few "first step" tutorials for modding the game. You don
 - [**Your First Map Edit**](./your_first_map_edit)
     - _Teaches you the basics of the Noggit Red map editor._
 
-- [**Your First Data Edit**](./your_first_data_edit)
+- [**Your First Data Edit**](./your_first_data_edits)
     - _Teaches you how to work with DBC files using the WDBX editor, and server database tables using HeidiSQL._
 
 - [**Your First Model Edit**](./your_first_model_edit)
