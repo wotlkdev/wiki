@@ -10,17 +10,17 @@ Tool development is often a highly technical task involving knowing how to read 
 
 The languages used to write WoW tools vary greatly, and is often down to the individual developers personal preferences, but the three most common languages are **C#**, **C++** and **Python**. A few examples:
 
-- WoW Blender Studio
+- **WoW Blender Studio**
     - Edits various 3D model formats in the game.
     - Written mostly in Python and C++
     - Complex project, requires good understanding of M2/WMO file formats to develop (but not to use!).
 
-- Noggit
+- **Noggit**
     - Map editor for the game
     - Written in C++
     - Complex project, requires good understanding of .adt file format to develop (but not to use!).
 
-- WDBX
+- **WDBX**
     - Edits the clients database tables (.dbc files)
     - Written in C#
     - Not too complex project, but requires basic understanding of how .dbc files work to develop (but not to use!).
