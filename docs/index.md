@@ -19,10 +19,10 @@ Instead of tutorials to do a bunch of very specific things, these guides will fo
 ## Table of Contents
 
 - [**Introduction**](./introduction):
-    - _A few introductory essays on what WoW modding is and why people do it._
+    - _What WoW modding is and why people do it._
 
 - [**Types of Mods**](./types_of_mods):
-    - _Explanations for the kinds of mods people create for the game._
+    - _The kinds of mods people create for the game._
 
 - [**Server Setup**](./server_setup):
     - _Pointers for easily setting up basic test servers, followed by a longer discussion on how to choose a server core for more serious projects._
