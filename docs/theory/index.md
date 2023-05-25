@@ -20,7 +20,7 @@ Most things in these docs should apply regardless of what core you use, but the 
         - [**Game Loop**](./core_game_loop): Execution graph for the various phases the core goes through when starting up and running the game server.
         - [**Modules**](./core_modules): The different classes and singletons used to manage and represent the serverside game world
         - [**Network**](./core_network): Incoming and outgoing packets and packet handlers
-        - [**Scripts**](./scripts): Why scripts are used, how script loading works and the kind of scripts that exist.
+        - [**Scripts**](./core_scripts): Why scripts are used, how script loading works and the kind of scripts that exist.
     - [**Client**](./client): How the client is structured and what can be done with it.
         - [**ADT/WDT/WDL**](./adt): What map files are and what they contain
         - [**BLP**](./blp): The different types of image/texture files used by the game
