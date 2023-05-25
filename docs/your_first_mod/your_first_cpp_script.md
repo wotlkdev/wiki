@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Your First C++ Script (Part 1)
+title: Your First C++ Script (Part 1) (UNFINISHED)
 nav_order: 5
 ---
 
-# Your First C++ Script (Part 1) - Creating the Files
+# Your First C++ Script (Part 1) (UNFINISHED) - Creating the Files
 
 This tutorial will go over creating your first TrinityCore C++ script, and explaining everything step by step.
 Some of you may find C++ scary, but don't worry, it's scary because lots of people code in a perverse, scary way.
