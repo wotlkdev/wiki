@@ -27,3 +27,4 @@ Most things in these docs should apply regardless of what core you use, but the 
         - [**M2**](./m2): Smaller and animated 3D models
         - [**WMO**](./wmo): NOT WRITTEN YET!!!
         - [**DBC**](./dbc): The client database tables
+        - [**Interface**](./interface): Client UI and scripting
