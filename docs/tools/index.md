@@ -40,7 +40,7 @@ This is a list of modern tools used by modders.
 
 ## Maps and Lighting
 
-- <img src="https://github.com/wowdev/noggit3/blob/default/media/noggit.png" height="16px"> [**Noggit**](https://github.com/wowdev/noggit3): The most commonly used map editor for WotLK. *(Sometimes referred to as Noggit Mint)*
+- <img src="https://raw.githubusercontent.com/wowdev/noggit3/default/media/noggit.png" height="16px"> [**Noggit**](https://github.com/wowdev/noggit3): The most commonly used map editor for WotLK. *(Sometimes referred to as Noggit Mint)*
     - <img src="https://gitlab.com/uploads/-/system/project/avatar/21682342/noggit_icon.png?width=16"> [**Noggit Red**](https://gitlab.com/prophecy-rp/noggit-red): A fork of Noggit originally created for ProphecyRP with improvements like an undo menu and asset browser.
 
 - [**adtcreator**](https://github.com/tswow/adt-creator/tree/1fa79991ecbd91eec9420f5ad7d3eb6a5af17ed6): Simple command-line tool used to create new maps (adts + wdt) from scratch.
