@@ -29,7 +29,7 @@ The "Lag" toggle allows us to enable 'reliable' latency in our application. When
 - The value in the `Delay(ms)` box becomes **two times as long** for local connections, and means most visible reactions in the clients become **four times as long**. This is because:
     - All packets are captured and intercepted twice by clumsy because of how windows handles local connections.
     - Most actions made by the client consists of two packets, one client->server packet and one server->client packet.
-    - Because both the client->server packet and the server->client packet are captured twice, the noticable delay for most actions in the game are **four times as long** as the time specified..
+    - Because both the client->server packet and the server->client packet are captured twice, the noticable delay for most actions in the game are **four times as long** as the time specified.
 
 <img class="mi ili" src="https://i.imgur.com/Gyh0RdN.png">
 
