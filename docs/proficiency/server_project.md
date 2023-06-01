@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Server Project
-nav_order: 8
+nav_order: 9
 ---
 
 # Server Projects (WIP)

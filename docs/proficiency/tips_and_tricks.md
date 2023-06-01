@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tips and Tricks
-nav_order: 7
+nav_order: 8
 ---
 
 # Tips and Tricks
