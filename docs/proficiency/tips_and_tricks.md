@@ -27,3 +27,13 @@ mklink /J C:\our\client\path\Data\patch-4.MPQ\DBFilesClient C:\our\server\path\d
 ```
 
 _note: You need to make sure to delete the `dbc` directory before running this command_
+
+## Speed up core debug startup
+
+In debug mode cores can take a while to start up, but there are a few things you can easily do to speed them up.
+
+- Disable startup query caching: Set `CacheDataQueries = 0` in your `worldserver.conf`
+- Empty (not drop) all `_locale` tables in your world database
+  - _TSWoW note: target the **destination** world database, not the source_
+
+<img class="mi ili" src="https://i.imgur.com/FyWVOea.png">
