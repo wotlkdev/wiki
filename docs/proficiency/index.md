@@ -28,3 +28,9 @@ This section contains advice and a few slightly more advanced guides to become .
 
 - [**Server Project**](./server_project)
     - _Some advice for how to start up a server project._
+
+- [**Bitmasks**](./server_project)
+    - _What bitmasks are and how they work in the game._
+
+- [**Spell Families**](./spell_families)
+    - _How to make spells modify other spells using bitmasks._
